@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Оформление заказа</title>
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="libs/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="libs/scroll/simplebar.css" />
+  <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="row g-0 -header-top-row">
+          <div class="col-auto -col-geo">
+            <div class="header__geo">
+              <select name="city" id="city" class="form-select">
+                <option value="Ярославль">Ярославль</option>
+                <option value="Симферополь">Симферополь</option>
+                <option value="Ижевск">Ижевск</option>
+                <option value="Саратов">Саратов</option>
+                <option value="Екатеринбург">Екатеринбург</option>
+                <option value="Краснодар">Краснодар</option>
+                <option value="Чебоксары">Чебоксары</option>
+                <option value="Ульяновск"> Ульяновск</option>
+                <option value="Оренбург">Оренбург</option>
+                <option value="Уфа">Уфа</option>
+                <option value="Тольятти">Тольятти</option>
+                <option value="Самара" selected>Самара</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-auto -col-wtime">
+            <div class="header__wtime -fs-14">
+              <span>Режим работы:</span> Пн-Пт 9:00 – 19:00, Сб 10:00 – 16:00
+            </div>
+          </div>
+          <div class="col-auto -col-phone">
+            <div class="header__phone -fs-14 -noto-m">
+              <a href="tel:88005506057">8 (800) 550 60 57</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__center">
+      <div class="container">
+        <div class="row g-0 -header-row">
+          <div class="col-md-3 col-lg-auto -col-logo">
+            <a href="#" class="logotype"><img src="i/logo.svg" alt=""></a>
+          </div>
+          <div class="col-md-9 col-lg-8 -col-hmenu">
+            <nav class="navbar navbar-expand-sm navbar-light">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hmenu"
+                aria-controls="hmenu" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="hmenu">
+                <ul class="navbar-nav me-auto hmenu-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Стать партнером</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Доставка</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Оплата</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      О компании
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Новости</a></li>
+                      <li><a class="dropdown-item" href="#">Статьи</a></li>
+                      <li><a class="dropdown-item" href="#">Реквизиты</a></li>
+                      <li><a class="dropdown-item" href="#">Сервисный центр</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="col-md-12 col-lg-auto -col-social">
+            <div class="header__social social">
+              <a href="#" class="-wa"></a>
+              <a href="#" class="-vb"></a>
+              <a href="#" class="-inst"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <div class="row -header-row">
+          <div class="col-3 col-sm-2 col-md-2 col-lg-3 -col-catalog">
+            <div class="header__catalog">
+              <nav class="navbar header__navbar">
+                <button class="navbar-toggler btn catalog-btn" type="button">
+                  <span class="icon-toggle"></span>
+                  Каталог товаров
+                </button>
+              </nav>
+
+            </div>
+          </div>
+          <div class="col-4 col-sm-4 col-md-6 col-lg-4 col-md-6 col-sm-6 -col-user">
+            <div class="row -user-row">
+              <div class="col-6 col-sm-12 col-md-6">
+                <div class="header__login">
+                  <span class="icon-user"></span>
+                  <a href="#">Личный кабинет</a>
+                </div>
+              </div>
+              <div class="col-6 col-sm-12 col-md-6">
+                <div class="header__b2b">
+                  <span class="icon-user"></span>
+                  <a href="#">Вход B2B</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-1 col-sm-2 col-md-1 col-lg-3 -col-search">
+            <div class="search-icon d-lg-none toggle-search"></div>
+            <div class="header__search">
+              <form class="d-flex form-search">
+                <input class="form-control" type="search" placeholder="Поиск" aria-label="Search">
+                <button class="btn btn-search" type="submit"></button>
+              </form>
+            </div>
+          </div>
+          <div class="col-4 col-9 col-sm-4 col-md-auto col-lg-auto -col-shop">
+            <div class="header__shop">
+              <a class="favorite-link" href="#">
+                <span class="favorite-amount">3</span>
+              </a>
+              <a class="card-link" href="#">
+                <span class="card-amount">3</span>
+              </a>
+            </div>
+          </div>
+          <div class="catalog-drop -fs-14" id="catalog-menu">
+            <div class="tabs">
+              <div class="nav-box nav flex-column -noto-m">
+                <button class="nav-link active"><span class="icon"><img src="i/icon-cat01.svg" alt=""></span>Кабельная
+                  продукция</button>
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat02.svg" alt=""></span> Эфирное
+                  оборудование</button>
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat03.svg" alt=""></span> Андроид приставки
+                  и асессуары</button>
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat04.svg" alt=""></span> Спутниковое
+                  оборудование</button>
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat05.svg" alt=""></span> Кронштейны ТВ,
+                  СВЧ</button>
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat06.svg" alt=""></span> Усилители
+                  мобильной связи GSMM/3G/4G</button>
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat07.svg" alt=""></span> Мобильные
+                  аксессуары</button>
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat08.svg" alt=""></span> Пульты
+                  дистанционного управления и аксессуары</button>
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat09.svg" alt=""></span>
+                  Инструменты</button>
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat01.svg" alt=""></span> Климатическая
+                  техника</button>
+
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat01.svg" alt=""></span> Климатическая
+                  техника</button>
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat01.svg" alt=""></span> Климатическая
+                  техника</button>
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat01.svg" alt=""></span> Климатическая
+                  техника</button>
+              </div>
+              <div class="tab-content">
+                <div class="tab-item fade show active">
+                  <ul class="cat-menu">
+                    <li class="nav-item">
+                      <a class="nav-link parent -noto-m" href="#">Кабель акустический</a>
+                      <ul class="sub-menu">
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Кабель для видеонаблюдения</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Кабель информационный UTP/FTP</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Кабель магистральный 75 Ом</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Кабель радиочастотный 50 Ом</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Кабель телевизионный 75 Ом</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Кабель телефонный</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Кабель электрический</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link parent -noto-m" href="#">USB флешки и карты памяти</a>
+                      <ul class="sub-menu">
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Автомобильные аксессуары</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Зарядные устройство</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Кабель для смартфонов</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Картридеры и USB разветвители</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Моноподы, Селфи-лампы, объективы</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link parent -noto-m" href="#">Онлайн кассы</a>
+                      <ul class="sub-menu">
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Весы</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Денежные ящики</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Доп. оборудование</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Кассы</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">ОФД</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Принтеры этикеток</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Сканеры</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Термолента и термоэтикетки</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Фискальные накопители</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link parent -noto-m" href="#">Портативная акустика</a>
+                      <ul class="sub-menu">
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Bluetooth колонки</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Колонки для компьютеров</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Радиоприемники</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link parent -noto-m" href="#">Эфирное оборудование</a>
+                      <ul class="sub-menu">
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">DVB-T2 приставки для телевизора</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Антенны для цифрового ТВ DVB-T2</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Антенны комнатные всеволновые</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Антенны улич ные всеволновые</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Делители, ответвители, диплексоры</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Мачты, кронштейны</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Пульты для T2 приставок, телевизоров</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Усилители эфирного и кабельного ТВ</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link parent -noto-m">Андроид приставки и асессуары</a>
+                      <ul class="sub-menu">
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Air Mouse (аэромыши)</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Smart-TV приставки</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-item fade">222</div>
+                <div class="tab-item fade">333</div>
+                <div class="tab-item fade">444</div>
+                <div class="tab-item fade">...</div>
+                <div class="tab-item fade">...</div>
+                <div class="tab-item fade">...</div>
+                <div class="tab-item fade">...</div>
+                <div class="tab-item fade">...</div>
+                <div class="tab-item fade">...</div>
+              </div>
+            </div>
+          </div>
+          <div class="mobil-drop -fs-14" id="mobil-menu">
+            <div class="mobil-drop-top">
+              <div class="mobil-phone">
+                <a href="tel:79999999999"></a>
+              </div>
+              <div class="mobil-menu-close">
+                <a href="#"></a>
+              </div>
+            </div>
+            <div class="mobil-drop-search">
+              <div class="mobil__search -fs-18">
+                <form class="d-flex form-search">
+                  <input class="form-control" type="search" placeholder="Поиск" aria-label="Search">
+                  <button class="btn btn-search" type="submit"></button>
+                </form>
+              </div>
+            </div>
+            <div class="mobil-drop-menu">
+              <ul class="navbar-nav me-auto mobil-nav -fs-22">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Каталог товаров</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Стать партнером</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Доставкам</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Оплата</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">О компании</a>
+                  <ul class="submenu -fs-16">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Статьи</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Реквизиты</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Сервисный центр</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Контакты</a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="mobil__user -fs-22">
+              <div class="mobil__login">
+                <span class="icon-user"></span>
+                <a href="#">Личный кабинет</a>
+              </div>
+              <div class="mobil__b2b">
+                <span class="icon-user"></span>
+                <a href="#">Вход B2B</a>
+              </div>
+            </div>
+            <div class="mobil__social social">
+              <a href="#" class="-wa"></a>
+              <a href="#" class="-vb"></a>
+              <a href="#" class="-inst"></a>
+            </div>
+            <div class="mobil__copy -center -fs-14">2022 © Компания «Спутник». Все права защищены</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <nav aria-label="breadcrumb" class="breadcrumbs -fs-12">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Главная</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Оформление заказа</li>
+        </ol>
+      </div>
+    </nav>
+    <div class="section main__title">
+      <div class="container">
+        <h1>Оформление заказа</h1>
+      </div>
+    </div>
+    <div class="main__content pt-0">
+      <div class="container">
+        <div class="order">
+          <div class="row -order-row">
+            <div class="col-md-7">
+              <div class="order-section order-person">
+                <div class="order-section-title -fs-18 -noto-m">Тип плательщика</div>
+                <div class="order-section-content">
+                  <div class="row -order-section-row">
+                    <div class="col-sm-6">
+                      <div class="radio-inline">
+                        <input checked="true" type="radio" name="PERSON_TYPE" value="1" class="custom-radiobox"
+                          id="person1">
+                        <label for="person1" class="ordering-text">Физ.лицо</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="radio-inline">
+                        <input type="radio" name="PERSON_TYPE" value="2" class="custom-radiobox" id="person2">
+                        <label for="person2" class="ordering-text">Юр.лицо</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="order-section order-delivery">
+                <div class="order-section-title -fs-18 -noto-m">Доставка</div>
+                <div class="order-group order-city">
+                  <label class="ordering-text -gray -fs-12" for="delivery">Ваш город</label>
+                  <input type="text" autocomplete="off" name="delivery" value="" class="form-control" id="delivery">
+                </div>
+                <div class="order-section-title -fs-18 -noto-m">Выберите способ доставки</div>
+                <div class="order-group">
+                  <div class="row -order-section-row">
+                    <div class="col-sm-6">
+                      <div class="radio-inline">
+                        <input checked="true" type="radio" name="DELIVERY_TYPE" value="1" class="custom-radiobox"
+                          id="delivery1">
+                        <label for="delivery1" class="ordering-text">Самовывоз</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="radio-inline">
+                        <input type="radio" name="DELIVERY_TYPE" value="2" class="custom-radiobox" id="delivery2">
+                        <label for="delivery2" class="ordering-text">Доставка</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="order-section-title -fs-18 -noto-m">Выберите пункт самовывоза</div>
+                <div class="order-group order-map">
+                  <img src="../i/map.png" alt="">
+                </div>
+                <div class="order-group order-location">
+                  <div class="radio-inline -show">
+                    <input type="radio" name="LOCATION_TYPE" value="1" class="custom-radiobox" id="location1">
+                    <label for="location1" class="ordering-text">г. Самара, ул. Санфировой, д. 95</label>
+                  </div>
+                  <div class="radio-inline -show">
+                    <input type="radio" name="LOCATION_TYPE" value="2" class="custom-radiobox" id="location2">
+                    <label for="location2" class="ordering-text">г. Самара, ул. Красных Коммунаров / Ново-Вокзальная (ТЦ
+                      «На Птичке»), сек. 3-26</label>
+                  </div>
+                  <div class="radio-inline -show">
+                    <input type="radio" name="LOCATION_TYPE" value="2" class="custom-radiobox" id="location3">
+                    <label for="location3" class="ordering-text">г. Самара, ул. Ташкентская, д. 196 А</label>
+                  </div>
+                  <div class="radio-inline -show">
+                    <input type="radio" name="LOCATION_TYPE" value="2" class="custom-radiobox" id="location4">
+                    <label for="location4" class="ordering-text">г. Бузулук, ул. Комсомольская д. 113 Б</label>
+                  </div>
+
+                  <a href="#" class="location-more">Весь список городов</a>
+                </div>
+              </div>
+              <div class="order-section order-pay">
+                <div class="order-section-title -fs-18 -noto-m">Способ оплаты</div>
+                <div class="order-section-content">
+                  <div class="radio-inline">
+                    <input checked="true" type="radio" name="PAY_TYPE" value="1" class="custom-radiobox" id="pay1">
+                    <label for="pay1" class="ordering-text">Наличный расчет</label>
+                  </div>
+                  <div class="radio-inline">
+                    <input type="radio" name="PAY_TYPE" value="2" class="custom-radiobox" id="pay2">
+                    <label for="pay2" class="ordering-text">Оплата банковской картой</label>
+                  </div>
+                </div>
+              </div>
+              <div class="order-section order-user">
+                <div class="order-section-title -fs-18 -noto-m">Ваши данные</div>
+                <div class="order-section-content">
+                  <div class="row -order-section-row">
+                    <div class="col-sm-6 user-col">
+                      <label for="user-name" class="ordering-text -gray -fs-12">Имя</label>
+                      <input type="text" name="user-name" value="" class="form-control" id="user-name">
+                    </div>
+                    <div class="col-sm-6 user-col">
+                      <label for="user-surname" class="ordering-text -gray -fs-12">Фамилия</label>
+                      <input type="text" name="user-surname" value="" class="form-control" id="user-surname">
+                    </div>
+                    <div class="col-sm-6 user-col">
+                      <label for="user-phone" class="ordering-text -gray -fs-12">Телефон</label>
+                      <input type="text" name="user-phone" value="" class="form-control" id="user-phone">
+                    </div>
+                    <div class="col-sm-6 user-col">
+                      <label for="user-email" class="ordering-text -gray -fs-12">E-mail</label>
+                      <input type="text" name="user-email" value="" class="form-control" id="user-email">
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-5">
+              <div class="order-section order-result">
+                <div class="order-section-title -fs-18 -noto-m">ваш заказ</div>
+                <div class="order-product">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="order-product-img">
+                        <img src="../i/order-product.png" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="order-product-info">
+                        <div class="order-product-title">Кабель витая пара REXANT UTP 4PR 24AWG, CAT5e наружный
+                          (OUTDOOR) (бухта 305 м)</div>
+                        <div class="order-product-art -fs-14">Артикул: 01-0045</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-total">
+                  <div class="cart-total-line">
+                    <span class="cart-t">Сумма заказа</span>
+                    <span class="cart-d">7 868,00 ₽</span>
+                  </div>
+                  <div class="cart-total-line">
+                    <span class="cart-t">В том числе НДС</span>
+                    <span class="cart-d">7 868,00 ₽</span>
+                  </div>
+                  <div class="cart-total-line">
+                    <span class="cart-t">Самовывоз</span>
+                  </div>
+                  <div class="cart-total-line cart-total-result">
+                    <span class="cart-t">Итого с НДС</span>
+                    <span class="cart-d">7 868,00 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row -order-row">
+            <div class="col-md-7">
+              <div class="order-bottom ">
+                <div class="row align-items-center -order-bottom-row">
+                  <div class="col-sm-4">
+                    <button class="btn btn-order -order-icon">Оформить заказ</button>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="policy -fs-12">Нажимая кнопку «Оформить заказ» вы даете согласие на <a
+                        href="#">обработку персональных данных</a> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="section mailing -bg-green">
+      <div class="container">
+        <div class="row -mailing-row">
+          <div class="col-md-6 col-lg-6 col-xl-auto">
+            <div class="form__text -mail-icon">Подпишитесь на нашу рассылку</div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-auto">
+            <form action="" class="form">
+              <div class="form-row">
+                <input type="text" class="form-control" placeholder="E-mail">
+                <button type="submit" class="btn btn-primary">Подписаться</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6 col-xl-auto">
+            <div class="form__info -fs-12">Нажимая кнопку «Подписаться» вы даете согласие на обработку персональных
+              данных </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </main>
+  <footer class="footer -bg-black">
+    <div class="container">
+      <div class="row -footer-row">
+        <div class="col-md-6">
+          <div class="footer__menu">
+            <div class="row -footer-menu-row g-0">
+              <div class="col-lg-4 col-md-6 col-sm-6 fmenu-col">
+                <a href="#" class="fmenu-title -fs-18">О компании</a>
+                <ul class="fmenu-sub -fs-14">
+                  <li class="fmenu-item">
+                    <a href="#" class="fmenu-link">Новости</a>
+                  </li>
+                  <li class="fmenu-item">
+                    <a href="#" class="fmenu-link">Статьи</a>
+                  </li>
+                  <li class="fmenu-item">
+                    <a href="#" class="fmenu-link">Реквизиты</a>
+                  </li>
+                  <li class="fmenu-item">
+                    <a href="#" class="fmenu-link">Сервисный центр</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-8 fmenu-col">
+                <div class="row -fmenu-row">
+                  <div class="col-lg-6">
+                    <a href="#" class="fmenu-title -fs-18">Каталог товаров</a>
+                  </div>
+                  <div class="col-lg-6">
+                    <a href="#" class="fmenu-title -fs-18">Стать партнером</a>
+                  </div>
+                  <div class="col-lg-6">
+                    <a href="#" class="fmenu-title -fs-18">Доставка</a>
+                  </div>
+                  <div class="col-lg-6">
+                    <a href="#" class="fmenu-title -fs-18">Оплата</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row -fcontacts">
+            <div class="col-md-auto">
+              <div class="footer__contacts">
+                <div class="fmenu-title -fs-20 d-none d-md-block">Контакты</div>
+                <div class="footer__address">443080, г. Самара, ул. Санфировой, д.95 , оф. 316</div>
+                <div class="footer__wtime"><span>Режим работы:</span> Пн-Вс 9:00 – 19:00</div>
+                <div class="footer__map">Адреса магазинов</div>
+              </div>
+            </div>
+            <div class="col-md-auto">
+              <div class="footer__social fsocial">
+                <a href="#" class="-vk"></a>
+                <a href="#" class="-yt"></a>
+                <a href="#" class="-inst"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row -footer-row fbottom-row">
+        <div class="col-lg-6 col-xl-6 -footer-copy-col">
+          <div class="footer-copy -fs-14">2021 © Компания «Спутник». Все права защищены</div>
+        </div>
+        <div class="col-lg-6 col-xl-auto -footer-pay-col">
+          <div class="row g-0 -pay-row">
+            <div class="pay-item -mir"></div>
+            <div class="pay-item -visa"></div>
+            <div class="pay-item -mcard"></div>
+          </div>
+        </div>
+        <div class="col-lg-7 col-xl-auto -footer-dev-col">
+          <div class="dev">
+            <span class="dev-text">Сделано руками</span><img src="i/logo-akticom.svg" alt="" class="dev-logo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <div class="popup popup-review" id="popup-review">
+    <div class="popup__wrap">
+      <div class="popup__title -rub-m -fs-30 -center">Оставить отзыв</div>
+      <form action="" class="review__form">
+        <div class="row -review-row">
+          <div class="col-12 -review-col">
+            <label for="r-name" class="form-label">ФИО</label>
+            <input type="text" id="r-name" class="form-control" placeholder="">
+          </div>
+          <div class="col-12 -review-col">
+            <label for="r-city" class="form-label">Город</label>
+            <select class="form-select" id="r-city">
+              <option value="msk">Москва</option>
+              <option value="bal">Балашиха</option>
+              <option value="pod">Подольск</option>
+              <option value="him">Химки</option>
+              <option value="mtsh">Мытищи</option>
+              <option value="kor">Королёв</option>
+              <option value="lub">Люберцы</option>
+              <option value="krg">Красногорск</option>
+              <option value="els">Электросталь</option>
+              <option value="kol">Коломна</option>
+              <option value="odn">Одинцово</option>
+              <option value="dom">Домодедово</option>
+              <option value="shel">Щёлково</option>
+              <option value="serp">Серпухов</option>
+              <option value="ram">Раменское</option>
+              <option value="orz">Орехово-Зуево</option>
+              <option value="dol">Долгопрудный</option>
+              <option value="push">Пушкино</option>
+              <option value="pet">Реутов</option>
+              <option value="juk">Жуковский</option>
+              <option value="nog">Ногинск</option>
+              <option value="sgp">Сергиев Посад</option>
+              <option value="mso">Московская область</option>
+            </select>
+
+          </div>
+          <div class="col-12 -review-col">
+            <div class="form-label">Ваше фото</div>
+            <div class="file-row">
+              <label for="r-photo" class="form-label file"></label>
+              <span class="filename">Загрузить фото</span>
+            </div>
+            <input type="file" id="r-photo" class="form-control">
+          </div>
+          <div class="col-12 -review-col">
+            <label for="r-text" class="form-label">Ваш отзыв</label>
+            <textarea id="r-text" class="form-control" placeholder=""></textarea>
+          </div>
+        </div>
+        <div class="review__btn -center">
+          <button type="submit" class="btn btn-secondary">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=f4d2a1b8-218d-43d3-9c61-1ea3422e6e7b&lang=ru_RU">
+  </script>
+  <script src="libs/bootstrap/bootstrap.min.js"></script>
+  <script src="libs/swiper/swiper-bundle.min.js"></script>
+  <script src="libs/fancybox/fancybox.umd.js"></script>
+  <script src="libs/scroll/simplebar.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="ru">
+<head>
+   <!-- Required meta tags -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="theme-color" content="#df1e42">
+   <meta charset="utf-8">
+   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+   <!-- Bootstrap CSS -->
+   <!--link rel="stylesheet" href="css/bootstrap.min.css"-->
+   <script src="https://api-maps.yandex.ru/2.1?apikey=a803aea6-63b1-499b-b872-ffcfe4ce0429&lang=ru_RU"></script>
+   <link rel="stylesheet" href="css/style.css">
+   <title>Контакты</title>
+</head>
+<body>
+   <div class="wrapper -page">
+      <header class="header">
+         <div class="container">
+            <div class="header_top">
+               <div class="row header_row">
+                  <div class="col-12 col-sm-6 col-md-6 col-lg-4 header_left">
+                     <nav class="navbar header_menu">
+                        <ul class="navbar-nav">
+                           <li class="nav-item">
+                              <a class="nav-link -open_section -menu -btn_bg" href="#catalog">Меню</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link -open_section -cat" href="#catalog">Каталог</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link -open_section" href="#about">Наша работа</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link -link" href="#">Контакты</a>
+                           </li>
+                        </ul>
+                     </nav>
+                     <div class="header_search row">
+                        <div class="search_col col-12">
+                           <form class="form-inline">
+                              <button class="btn -btn_bg" type="submit"></button>
+                              <input class="form-control" type="search" placeholder="Введите название товара..." aria-label="Search">
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-6 col-sm-12 col-lg-3 header_center">
+                     <a href="/" class="logo"></a>
+                     <span>Ваш производитель хим сырья</span>
+                  </div>
+                  <div class="col-6 col-sm-6 col-md-6 col-lg-5 header_right">
+                     <span class="basket_info">В корзине <span>4</span> товара на <span>12 000</span> Р</span>
+                     <!-- <span class="basket_info">Корзина пока пуста.</span> -->
+                     <a href="#" class="basket -btn_bg"></a>
+                     <a href="#authorize" class="user -btn_bg -open_section"></a>
+                     <!-- Всплывающее меню -->
+                     <div class="section section_menu section_menu_item" id="authorize">
+                        <div class="section_menu_box authorize">
+                           <div class="triangle"></div>
+                           <div class="content_center">
+                              <div class="row content_row">
+                                 <div class="col-sm-10 content_item_col">
+                                    <a href="#" class="title_menu">Авторизация</a>
+                                    <div class="authorize_box">
+                                       <div class="row authorize_row">
+                                          <div class="col-md-6 authorize_left">
+                                             <div class="row authorize_head">
+                                                <div class="col-md-9 authorize_col">
+                                                   <p>Пожалуйста, авторизуйтесь</p>
+                                                </div>
+                                                <div class="col-md-3 authorize_col"><span class="user -btn_bg"></span></div>
+                                             </div>
+                                             <form action="" class="authorize_form">
+                                                <div class="form-group">
+                                                   <label for="InputEmail">Логин</label>
+                                                   <input type="email" class="form-control" id="InputEmail" placeholder="user@mail.ru">
+                                                </div>
+                                                <div class="form-group">
+                                                   <label for="InputPassword">Password</label>
+                                                   <input type="password" class="form-control" id="InputPassword" placeholder="*********">
+                                                </div>
+                                                <div class="form-group checkbox">
+                                                   <input type="checkbox" class="" id="Check">
+                                                   <label class="" for="Check">Запомнить меня на этом компьютере</label>
+                                                </div>
+                                                <button type="submit" class="btn">Войти</button>
+                                             </form>
+                                          </div>
+                                          <div class="col-md-6 authorize_right">
+                                             <div class="authorize_info">
+                                                <p>Если вы впервые на сайте, пожалуйста, заполните форму регистрации.</p>
+                                                <a href="#">Зарегистрироваться</a>
+                                                <a href="#">Забыли пароль?</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-2 close_col"><a class="-open_section -close -btn_bg" href="#menu">Меню</a></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- /Всплывающее меню -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="content_wrap">
+         <div class="container">
+            <div class="content">
+               <div class="content_center row">
+                  <div class="col-lg-12">
+                     <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                           <li class="breadcrumb-item"><a href="#">Главная</a></li>       
+                           <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+                        </ol>
+                     </nav>
+                     <div class="page_title">
+                        <h1>Контакты</h1>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-7 content_contacts">
+                     <div class="content_row row">
+ 
+                        <div class="col-md-12 col-lg-6 content_left">
+                           <ul class="nav navbar contact_tabs">
+                              <div class="dotted"></div>
+                              <li class="nav-item office">
+                                 <span class="chap">01</span><a class="nav-link active" href="#general" data-coords="59.62298714144381,30.527809468231183">Главный офис</a>
+                              </li>
+                              <li class="nav-item warehouse">
+                                 <span class="chap">02</span><a class="nav-link -toggle" href="#">Склады</a>
+                                 <div class="warehouse_list">
+                                    <a class="sub-link" href="#mos" data-coords="56.24002306848789,37.99419999999999">Москва</a>
+                                    <a class="sub-link" href="#ekb" data-coords="56.760159567931126,60.732886499999935">Екатеринбург</a>
+                                    <a class="sub-link" href="#rost" data-coords="47.25347607425355,39.6094695">Ростов на Дону</a>
+                                    <a class="sub-link" href="#nsb" data-coords="54.95129656972737,82.89208749999986">Новосибирск</a>
+                                    <a class="sub-link" href="#nn" data-coords="56.30223256843794,43.87048449999999">Нижний Новгород</a>
+                                    <a class="sub-link" href="#spb" data-coords="59.62213658591203,30.530835000000003">Ленинградская область</a>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="col-md-12 col-lg-6 content_center">
+                           <div class="contacts_info tabs">
+                              <div class="tabs__content active" id="general">
+                                 <div class="title">Главный офис</div>
+                                 <p>ООО «Авогадро» является официальным партнёром Группы Компаний «Аттика»</p>
+                                 <p class="phone">+ 7 (812) 441-21-80</p>
+                                 <a href="mailto:avogadro@mail.ru" class="mail">avogadro@mail.ru</a>
+                                 <span class="work">пн-пт с 9:00 до 20:00</span>
+                                 <p class="address">Вертикальный 2-й проезд, дом.9 Федоровское сельское поселение деревня Аннолово, Тосненский район, Ленинградская область, 187000</p>
+                              </div>
+                              <div class="tabs__content" id="mos">
+                                 <div class="title">Москва</div>
+                                 <p class="phone">8 (915) 318-85-36<br><br>8 (495) 526-69-56 доб. 1122</p>
+                                 <span class="work">пн-пт с 9:00 до 16:00</span>
+                                 <p class="address">Московская область, Сергиево-Посадский район, город Хотьково, Художественный проезд, дом 2, литера Е</p>
+                              </div>
+                              <div class="tabs__content" id="ekb">
+                                 <div class="title">Екатеринбург</div>
+                                 <p class="phone">+ 7-922-136-14-14</p>
+                                 <span class="work">пн-пт с 9:00 до 17:00</span>
+                                 <p class="address">г. Екатеринбург ул. Альпинистов, 77</p>
+                              </div>
+                              <div class="tabs__content" id="rost">
+                                 <div class="title">Ростов на Дону</div>
+                                 <p class="phone">8 (863) 221-27-90</p>
+                                 <span class="work">пн-пт с 9:00 до 16:00</span>
+                                 <p class="address">г.Ростов-на-Дону, пер. 1-й Машиностроительный, 3-А</p>
+                              </div>
+                              <div class="tabs__content" id="nsb">
+                                 <div class="title">Новосибирск</div>
+                                 <p class="phone">8 (383) 207-55-32 доб. 5403</p>
+                                 <span class="work">пн-пт с 9:00 до 18:00</span>
+                                 <p class="address">Новосибирская область, город Новосибирск, проезд Северный (Кировский район), 3/8</p>
+                              </div>
+                              <div class="tabs__content" id="nn">
+                                 <div class="title">Нижний Новгород</div>
+                                 <p class="phone">8 (831) 276-17-07<br>8 (831) 276-17-09</p>
+                                 <span class="work">пн-пт с 9:00 до 17:30</span>
+                                 <p class="address">г.Нижний Новгород, улица Кузбасская, дом 15, литера А</p>
+                              </div>
+                              <div class="tabs__content" id="spb">
+                                 <div class="title">Ленинградская область</div>
+                                 <p class="phone">8 (812) 600-31-74<br><br>8 (911) 812-83-83</p>
+                                 <span class="work">пн-чт с 8:00 до 16:00<br>пт с 8-00 до 16-00</span>
+                                 <p class="address">Ленинградская область, Тосненский район, Деревня Аннолово, Фёдоровское сельское поселение, 2-й Вертикальный проезд.</p>
+                              </div>
+                           </div>
+                        </div>
+
+                        
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 content_right">
+                     <div class="sity_map">
+                        <div id="map"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+<footer class="footer">
+   <div class="container">
+      <div class="copy">
+         2019 © Авторские права — ГК «Аттика»
+      </div>
+   </div>
+   <div id="toTop" class="-btn_bg"><img src="/images/toTop.svg" alt="" /></div>
+</footer>
+<div class="section_menu">
+   <div class="section_menu_box">
+      <div class="section_menu_header row">
+         <div class="col-md-6 section_menu_navbar">
+            <ul class="navbar-nav mobil-nav">
+               <li class="nav-item">
+                  <a class="nav-link -open_section -close -btn_bg" href="#menu">Меню</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link -open_section -menu -toggle" href="#menu">Меню</a>
+               </li>
+            </ul>
+            <a class="-open_section -close -btn_bg" href="#menu">Меню</a>
+            <ul class="nav navbar tabs__caption">
+               <li class="nav-item">
+                  <a class="nav-link active" href="#catalog">Каталог</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#about">Наша работа</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#contacts">Контакты</a>
+               </li>
+            </ul>
+         </div>
+         <div class="col-md-6 section_menu_contacts">
+            <div class="section_top_contacts">
+               <div class="phone"><a href="tel:78124412180">+7 (812) 441-21-80</a></div>
+               <div class="work_time">пн-пт с 9:00 до 20:00</div>
+            </div>
+         </div>
+      </div>
+      <div class="tabs">
+         <div class="content_center tabs__content active" id="catalog">
+            <div class="content_center_menu">
+               <div class="row content_center_menu_row">
+                  <div class="col-md-6 content_menu_left">
+                     <div class="row menu_item_row">
+                        <div class="col-sm-2 menu_item_col">
+                           <span class="chap">01</span>
+                        </div>
+                        <div class="col-sm-10 menu_item_col">
+                           <a href="#" class="title_menu">Для лакокрасочных материалов</a>
+                           <ul class="nav flex-column">
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Алкидные смолы</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Акриловые смолы</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Активные разбавители</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Амино-Смолы</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Дисперсии</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Ненасыщенные полиэфирные смолы</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Отвердители эпоксидных систем</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Полиэфирные смолы насыщенные</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Полиизоционаты</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Системы для Can- и Coil-coatings</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Сиккативы и катализаторы</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">УФ-отверждаемые смолы</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Функциональные добавки</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Хлорированные смолы</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Эпоксидные смолы</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="row menu_item_row">
+                        <div class="col-sm-2 menu_item_col">
+                           <span class="chap">03</span>
+                        </div>
+                        <div class="col-sm-10 menu_item_col">
+                           <a href="#" class="title_menu">Для строительных материалов</a>
+                           <ul class="nav flex-column">
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Акриловые смолы</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Активные разбавители эпоксидных систем</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Готовые компаунды</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Защита Бетона</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Отвердители для эпоксидов</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Полиолы</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Полиизоционаты</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Полиэфирные смолы насыщенные</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Хлорированные смолы</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Эпоксидные смолы</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 content_menu_right">
+                     <div class="row menu_item_row">
+                        <div class="col-sm-2 menu_item_col">
+                           <span class="chap">02</span>
+                        </div>
+                        <div class="col-sm-10 menu_item_col">
+                           <a href="#" class="title_menu">Для композитных материалов</a>
+                           <ul class="nav flex-column">
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Активные разбавители</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Армирующие материал</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Гелькоуты и Топкоуты</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Инструменты</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Ненасыщенные полиэфирные смолы</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Отвердители для эпоксидных смол</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Ускорители и катализаторы</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Эпоксидные смолы</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="row menu_item_row">
+                        <div class="col-sm-2 menu_item_col">
+                           <span class="chap">04</span>
+                        </div>
+                        <div class="col-sm-10 menu_item_col">
+                           <a href="#" class="title_menu">Растворители</a>
+                           <ul class="nav flex-column">
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Акриловые смолы</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Активные разбавители эпоксидных систем</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Готовые компаунды</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Защита Бетона</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Отвердители для эпоксидов</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Полиолы</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Полиизоционаты</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Полиэфирные смолы насыщенные</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Хлорированные смолы</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Эпоксидные смолы</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <a href="#" class="btn_pdf">Скачать Прайс-Лист (PDF)</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="content_center tabs__content" id="about">
+            <div class="content_center_menu">
+               <div class="row content_center_menu_row">
+                  <div class="col-md-7 news">
+                     <div class="row menu_item_row">
+                        <div class="col-sm-2 menu_item_col">
+                           <span class="chap">01</span>
+                        </div>
+                        <div class="col-sm-10 menu_item_col">
+                           <a href="#" class="title_menu">Новости</a>
+                           <div class="news_item_box">
+                              <a href="#" class="news_item">
+                                 <span class="triangle"></span>
+                                 <img src="images/item-3.png" alt="">   
+                                 <span class="news_item_title"><span class="-lite">#17</span> «Attlamine 33»</span>
+                                 <span class="news_item_anons">Мы провели тестирование «Attlamine 33» специально для Вас</span>
+                                 <span class="news_item_data">22 апреля 2019</span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row menu_item_row">
+                        <div class="col-sm-2 menu_item_col">
+                           <span class="chap">02</span>
+                        </div>
+                        <div class="col-sm-10 menu_item_col">
+                           <a href="#" class="title_menu">Статьи</a>
+                           <a href="#" class="news_item">
+                              <span class="triangle"></span>
+                              <img src="images/item-3.png" alt="">   
+                              <span class="news_item_title"><span class="-lite">#24</span> «Synthalat A 077»</span>
+                              <span class="news_item_anons">Защита от коррозии качественными лакокрасочными материалами на основе акриловой смолы «Synthalat A 077»</span>
+                              <span class="news_item_data">Юлия Галкина / 22 апреля 2019</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-5 link_list">
+                     <div class="row menu_item_row">
+                        <div class="col-sm-2 menu_item_col">
+                           <span class="chap">03</span>
+                        </div>
+                        <div class="col-sm-10 menu_item_col">
+                           <a href="#" class="title_menu">Видео</a>
+                        </div>
+                     </div>
+                     <div class="row menu_item_row">
+                        <div class="col-sm-2 menu_item_col">
+                           <span class="chap">04</span>
+                        </div>
+                        <div class="col-sm-10 menu_item_col">
+                           <a href="#" class="title_menu">Сертификаты</a>
+                        </div>
+                     </div>
+                     <div class="row menu_item_row">
+                        <div class="col-sm-2 menu_item_col">
+                           <span class="chap">05</span>
+                        </div>
+                        <div class="col-sm-10 menu_item_col">
+                           <a href="#" class="title_menu">Доставка / Оплата</a>
+                        </div>
+                     </div>
+                     <div class="row menu_item_row">
+                        <div class="col-sm-2 menu_item_col">
+                           <span class="chap">06</span>
+                        </div>
+                        <div class="col-sm-10 menu_item_col">
+                           <a href="#" class="title_menu">Об «Авогадро»</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="content_center tabs__content" id="contacts">
+            <div class="content_center_menu">
+               <div class="row content_center_menu_row contacts_box">
+                  <div class="col-md-6 contacts_top">
+                     <a href="#" class="title_menu"><span class="chap">01</span>Главный офис</a>
+                     <a href="#" class="title_menu"><span class="chap">02</span>Склады</a>
+                     <a href="#" class="title_menu"><span class="chap">03</span>Представительства</a>
+                  </div>
+                  <div class="col-md-6 contacts_bottom">
+                     <a href="tel:78124412180" class="contacts_bottom_phone">+7 (812) 441-21-80</a>
+                     <div class="contacts_bottom_info">
+                        <p>пн-пт с 9:00 до 20:00</p>
+                        <p>Официальный партнёр Группы Компаний «Аттика»</p>
+                        <p class="address">187000, Вертикальный 2-й проезд, дом.9 Федоровское сельское поселение деревня Аннолово, Тосненский район, Ленинградская область.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+<script src="js/jquery-3.4.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

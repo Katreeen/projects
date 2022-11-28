@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="i/favicon/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- style -->
+  <link rel="stylesheet" href="libs/bootstrap5/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="libs/slick/slick.css"/>
+  <link rel="stylesheet" href="libs/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="libs/jquery/jquery-ui/jquery-ui.min.css"/>
+  <link rel="stylesheet" href="libs/jquery/jquery-ui/jquery-ui.theme.min.css"/>
+  <link rel="stylesheet" href="libs/animate/splitting.css" />
+  <link rel="stylesheet" href="libs/animate/splitting-cells.css" />
+  <!-- <link rel="stylesheet" href="libs/animate/jquery.mCustomScrollbar.min.css" /> -->
+  <link rel="stylesheet" href="libs/animate/animate.min.css">
+  
+  <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body class="home" data-bs-spy="scroll" data-bs-target="#fix-menu">
+  <div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header_row row">
+					<div class="col-7 col-sm-4 col-md-4 col-lg-3 col-xl-2 header_col_logo">
+						<a	href="/" class="header_logo"><img src="i/logo.png" alt=""></a>
+					</div>
+					<div class="col-lg-3 col-xl-3 col-xxl-4 header_col_search">
+						<div class="header_search">
+							<form class="form-inline form_search">
+								<input class="form-control -got-400" type="search" placeholder="Поиск по сайту" aria-label="Search">
+								<button class="btn search_btn" type="submit"></button>
+							</form>
+						</div>
+					</div>
+					<div class="col-2 col-sm-6 col-md-7 col-lg-6 col-xl-5 header_col_contact">
+						<div class="header_contact_phone_row">
+							<div class="header_contact_phone">
+								<a href="tel:+7 (846) 979-88-84" class="h-phone -got-600 -fs-30">8 (846) 979-88-84</a>
+								<span class="h-phone_text">многоканальный</span>
+							</div>
+							<div class="header_callback_btn">
+								<a href="#" class="callback btn btn-primary">обратный звонок</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 col-lg-2 col-xl-1 header_col_lang">
+						<div class="header_lang -fs-20 ">
+							<a href="#ru" class="lang active">Ru</a>
+							<a href="#en" class="lang">En</a>
+						</div>
+					</div>
+					<div class="col-3 col-sm-2 col-md-1 header_col_burger">
+						<button class="navbar-toggler"></button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="grid"></div>
+		<main class="main">
+			<div class="main_nav">
+				<div class="container">
+					<div id="fix-menu" class="main_menu -got-400 -fs-20" data-splitting="items">
+						<li data-wow-delay="1.1s" class="menu-item wow animate__fadeInUp"><a href="#" class="menu-item-link">Компания</a></li>
+						<li data-wow-delay="1.2s" class="menu-item wow animate__fadeInUp"><a href="#" class="menu-item-link">Каталог</a></li>
+						<li data-wow-delay="1.3s" class="menu-item wow animate__fadeInUp"><a href="#" class="menu-item-link">Услуги</a></li>
+						<li data-wow-delay="1.4s" class="menu-item wow animate__fadeInUp"><a href="#" class="menu-item-link">Контакты</a></li>
+						<li data-wow-delay="1.5s" class="menu-item wow animate__fadeInUp"><a href="#" class="menu-item-link">Информация</a>
+                <ul class="sub-menu-item">
+                  <li class="menu-item"><a href="#" class="menu-item-link">Новости</a>
+                  <li class="menu-item"><a href="#" class="menu-item-link">Статьи</a>
+                  <li class="menu-item"><a href="#" class="menu-item-link">Производство</a>
+                </ul> 
+            </li>
+					</div>
+				</div>
+			</div>
+			<div class="header_drop">
+				<div class="header_drop_top">
+					<div class="container">
+						<div class="header_drop_row row">
+							<div class="col-7 col-sm-4 col-md-3 col-lg-2 col-xl-2 header_drop_col_logo">
+								<a	href="/" class="header_drop_logo"><img src="i/logo.png" alt=""></a>
+							</div>
+							<div class="col-sm-5 col-md-6 col-lg-4 col-xl-5 header_drop_col_search">
+								<div class="header_drop_search">
+									<form class="form-inline header_drop_form_search">
+										<input class="form-control -got-400" type="search" placeholder="Поиск по сайту" aria-label="Search">
+										<button class="btn search_btn" type="submit"></button>
+									</form>
+								</div>
+							</div>
+							<div class="col-sm-5 col-lg-3 col-xl-3 header_drop_col_contact">
+								<div class="header_drop_contact_phone_row">
+									<div class="header_drop_contact_phone">
+										<a href="tel:+78469798884" class="h-phone -got-600 -fs-30">8 (846) 979-88-84</a>
+										<span class="h-phone_text">многоканальный</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-2 col-md-2 col-lg-2 col-xl-1 header_drop_col_lang">
+								<div class="header_drop_lang -fs-20 ">
+									<a href="#ru" class="lang active">Ru</a>
+									<a href="#en" class="lang">En</a>
+								</div>
+							</div>
+							<div class="col-5 col-sm-1 col-md-1 header_drop_col_burger">
+								<button class="navbar-toggler-close"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header_drop_menu">
+					<div class="container">
+						<ul class="drop_menu_nav -fs-20">
+							<li class="drop_menu_item parent active">
+								<a href="#" class="drop_menu_item_link">Компания</a>
+								<ul class="drop_menu_item_children -ms-400 -fs-15">
+									<li class="drop_menu_item_child">
+										<a href="#" class="drop_menu_item_child_link">Миссия</a>
+									</li>
+									<li class="drop_menu_item_child">
+										<a href="#" class="drop_menu_item_child_link">История</a>
+									</li>
+									<li class="drop_menu_item_child">
+										<a href="#" class="drop_menu_item_child_link">Сертификаты</a>
+									</li>
+									<li class="drop_menu_item_child">
+										<a href="#" class="drop_menu_item_child_link">Партнеры</a>
+									</li>
+									<li class="drop_menu_item_child">
+										<a href="#" class="drop_menu_item_child_link">Руководство</a>
+									</li>
+									<li class="drop_menu_item_child">
+										<a href="#" class="drop_menu_item_child_link">Вакансии</a>
+									</li>
+									<li class="drop_menu_item_child">
+										<a href="#" class="drop_menu_item_child_link">Реквизиты</a>
+									</li>
+								</ul>
+							</li>
+							<li class="drop_menu_item"><a href="#" class="drop_menu_item_link">Каталог</a></li>
+							<li class="drop_menu_item"><a href="#" class="drop_menu_item_link">Услуги</a></li>
+							<li class="drop_menu_item"><a href="#" class="drop_menu_item_link">Контакты</a></li>
+							<li class="drop_menu_item"><a href="#" class="drop_menu_item_link">Информация</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="header_drop_bottom">
+					<div class="container">
+						<div class="header_drop_bottom_callback">
+							<a href="#" class="callback">Заказать звонок</a>
+						</div>
+						<div class="header_drop_bottom_contact_phone">
+							<a href="tel:+78469798884" class="h-phone -got-600 -fs-30">8 (846) 979-88-84</a>
+							<span class="h-phone_text">многоканальный</span>
+						</div>
+						<div class="header_drop_bottom_lang -fs-20 ">
+							<span>Switch to 
+							<a href="#ru" class="lang active">Russian</a>
+							<a href="#en" class="lang">English</a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="section section_first">
+				<div class="lines"></div>
+				<div class="main_carousel_wrap ">
+					<div class="main_carousel">
+						<div class="carousel_item">
+							<div class="carousel_item_img">
+								<div class="carousel_item_img_top">
+									<img src="i/slide011.png" alt="">
+								</div>
+								<div class="carousel_item_img_base">
+									<img src="i/slide-base.png" alt="">
+								</div>
+							</div>
+							<div class="container">
+								<div class="carousel_item_content offset-xxl-2">
+									<div data-splitting class="carousel_item_title -st-500 -fs-80">Производство фенольной бумаги</div>
+									<div class="carousel_item_btn"><a href="#" class="btn btn-link">Перейти в каталог</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel_item">
+							<div class="carousel_item_img">
+								<div class="carousel_item_img_top">
+									<img src="i/slide02.png" alt="">
+								</div>
+								<div class="carousel_item_img_base">
+									<img src="i/slide-base.png" alt="">
+								</div>
+							</div>
+							<div class="container">
+								<div class="carousel_item_content offset-xxl-2">
+									<div data-splitting class="carousel_item_title -st-500 -fs-80">Производство фенольной бумаги</div>
+									<div class="carousel_item_btn"><a href="#" class="btn btn-link">Перейти в каталог</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel_item">
+							<div class="carousel_item_img">
+								<div class="carousel_item_img_top">
+									<img src="i/slide011.png" alt="">
+								</div>
+								<div class="carousel_item_img_base">
+									<img src="i/slide-base.png" alt="">
+								</div>
+							</div>
+							<div class="container">
+								<div class="carousel_item_content offset-xxl-2">
+									<div data-splitting class="carousel_item_title -st-500 -fs-80">Производство фенольной бумаги</div>
+									<div class="carousel_item_btn"><a href="#" class="btn btn-link">Перейти в каталог</a></div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="main_carousel_nav">
+						<div class="s-prev"></div>
+						<div class="s-next"></div>
+					</div>
+				</div>
+				<div class="bottom_scroll"></div>
+			</div>
+			<div class="section section_catalog">
+				<div class="container-fluid p-0">
+					<div class="section_catalog_wrap pl-js">
+						<div class="cursor">Листай</div>
+						<div class="catalog_carousel_wrap">
+							<div class="catalog_btn vertical-link"><a href="#" class="btn-link">Каталог</a></div>
+							<div class="catalog_carousel wow animate__fadeInRight">
+								<div class="carousel_item">
+									<div class="carousel_item_content">
+										<div class="carousel_item_title -st-500 -fs-60">Бумага для ламинирования
+											фанеры</div>
+										<div class="carousel_item_img">
+											<img src="i/catalog1.png" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="carousel_item">
+									<div class="carousel_item_content">
+										<div class="carousel_item_title -st-500 -fs-60">Бумага для производства ДБСП</div>
+										<div class="carousel_item_img">
+											<img src="i/catalog1.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog_list_wrap">
+							<div class="catalog_list_item">
+								<div class="catalog_list_item_content">
+									<div class="catalog_list_item_title -st-500 -fs-24">Бумага для ламинирования
+										фанеры</div>
+									<div class="catalog_list_item_img">
+										<img src="i/catalog1.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="catalog_list_list_item">
+								<div class="catalog_list_item_content">
+									<div class="catalog_list_item_title -st-500 -fs-24">Бумага для производства ДБСП</div>
+									<div class="catalog_list_item_img">
+										<img src="i/catalog1.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="section section_about">
+				<div class="container">
+					<div class="section_content offset-xxl-2">
+						<div class="section_title">Компания «Новел Групп»</div>
+						<div class="row about_row">
+							<div class="col-sm-8">
+								<div class="about_text">
+									<div class="about_desc -fs-18">
+										<p class="-got-400 -fs-25">Качество  |  Открытость  |  Инновации</p>
+										<p>Компания «Новел Групп» является первым российским производителем фенольной бумаги (бумаги, пропитанной фенольными смолами). Фенольная бумага используется для ламинирования фанеры с целью придания ей особых характеристик, необходимых для использования ее в качестве строительной опалубки.</p>
+
+										<p>Специальные фенольные бумаги используются в производстве мебели, торгового и складского оборудования, в транспортном машиностроении. Производство запущено в Самаре в 2012 году и рассчитано на выпуск 45 000 000 м<sup>2</sup> фенольной бумаги в год. Производство фенольных бумаг ведется на пропиточной линии производства фирмы «TOCCHIO» (Италия).</p> 
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="about_img">
+									<img src="i/about-right.png" alt="" class="wow animate__fadeInUp">
+								</div>
+							</div>
+						</div>
+						<div class="about_bottom">
+							<div class="about_btn vertical-link"><a href="#" class="btn-link">О компании</a></div>
+							<div class="about_bottom_img"><img src="i/about-bottom.png" alt="" class="wow animate__fadeInUp"></div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="section section_service">
+				<div class="container">
+					<div class="section_content offset-xxl-2">
+						<div class="service_wrap_row">
+							<div class="service_btn vertical-link"><a href="#" class="btn-link">О производстве</a></div>
+							<div class="service_content">
+								<div class="section_title">
+									Уникальная технология производства
+								</div>
+								<div class="service_row row">
+									<div class="col-md-8">
+										<div class="service_item_main ">
+											<img src="i/serv01.jpg" alt="">
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="service_items_vertical -fs-14">
+											<div class="service_item  wow animate__fadeInRight">
+												<a href="#" class="service_item_title ">Переработка давальческого сырья</a>
+												<div class="service_item_img"><img src="i/serv02.jpg" alt=""></div>
+											</div>
+											<div class="service_item  wow animate__fadeInRight">
+												<a href="#" class="service_item_title">Переработка давальческого сырья</a>
+												<div class="service_item_img"><img src="i/serv03.jpg" alt=""></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section section_partners">
+				
+				<div class="container-fluid p-0">
+					<div class="section_content pl-js">
+						<div class="section_title">Постоянные партнеры</div>
+						<div class="section_top_text -fs-20">Наша компания плодотворно сотрудничает с ведущими национальными и международными контрагентами, мы высоко оцениваем вклад каждого участника рынка в развитие отрасли и стремимся выстраивать взаимовыгодное сотрудничество с нашими партнёрами.</div>
+
+						<div class="partners_carousel_row">
+							<div class="lines2"></div>
+							<div class="partners_btn vertical-link"><a href="#" class="btn-link">Все партнеры</a></div>
+							<div class="partners_carousel_wrap">
+								<div class="partners_carousel">
+									<div class="partners_item">
+										<div class="partners_item_logo"><img src="i/logo_item01.png" alt=""></div>
+										<div class="partners_item_info">
+											<div class="partners_item_name -fs-30 -ms-600">Сыктывкарский фанерный завод</div>
+											<div class="partners_item_anons -fs16">Один из крупнейших в России производителей большеформатной фанеры и мебельной плиты на древесной основе.</div>
+											<a href="#" class="partners_item_btn"></a>
+										</div>
+									</div>
+									<div class="partners_item">
+										<div class="partners_item_logo"><img src="i/logo_item01.png" alt=""></div>
+										<div class="partners_item_info">
+											<div class="partners_item_name -fs-30 -ms-600">Сыктывкарский фанерный завод</div>
+											<div class="partners_item_anons -fs16">Один из крупнейших в России производителей большеформатной фанеры и мебельной плиты на древесной основе.</div>
+											<a href="#" class="partners_item_btn"></a>
+										</div>
+									</div>
+									<div class="partners_item">
+										<div class="partners_item_logo"><img src="i/logo_item02.png" alt=""></div>
+										<div class="partners_item_info">
+											<div class="partners_item_name -fs-30 -ms-600">Сыктывкарский фанерный завод</div>
+											<div class="partners_item_anons -fs16">Один из крупнейших в России производителей большеформатной фанеры и мебельной плиты на древесной основе.</div>
+											<a href="#" class="partners_item_btn"></a>
+										</div>
+									</div>
+									<div class="partners_item">
+										<div class="partners_item_logo"><img src="i/logo_item01.png" alt=""></div>
+										<div class="partners_item_info">
+											<div class="partners_item_name -fs-30 -ms-600">Сыктывкарский фанерный завод</div>
+											<div class="partners_item_anons -fs16">Один из крупнейших в России производителей большеформатной фанеры и мебельной плиты на древесной основе.</div>
+											<a href="#" class="partners_item_btn"></a>
+										</div>
+									</div>
+									<div class="partners_item">
+										<div class="partners_item_logo"><img src="i/logo_item02.png" alt=""></div>
+										<div class="partners_item_info">
+											<div class="partners_item_name -fs-30 -ms-600">Сыктывкарский фанерный завод</div>
+											<div class="partners_item_anons -fs16">Один из крупнейших в России производителей большеформатной фанеры и мебельной плиты на древесной основе.</div>
+											<a href="#" class="partners_item_btn"></a>
+										</div>
+									</div>
+								</div>
+								<div class="partners_carousel_nav">
+									<div class="s-prev"></div>
+									<div class="s-next"></div>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section section_news">
+			<div class="container">
+				<div class="section_content offset-xxl-2">
+					<div class="section_title">Новости</div>
+					<div class="news_carousel_nav">
+						<div class="arrow-prev"></div>
+						<div class="arrow-next"></div>
+					</div>
+					<div class="news_list">
+						<div class="news_btn vertical-link"><a href="#" class="btn-link">Читать все новости</a></div>
+						<div class="news_list_row row">
+							<div class="col-sm-6 col-md-6 news-col">
+								<a href="#" class="news_list_item wow animate__fadeInUp">
+									<span class="news_list_item_img"><img src="i/news01.jpg" alt=""></span>
+									<span class="news_list_item_data -got-300 -fs-20">11 янв 2021</span>
+									<span class="news_list_item_title -fs-25">Новый продукт в линейке фенольных пленок</span>
+								</a>
+							</div>
+							<div class="col-sm-6 col-md-6 news-col">
+								<a href="#" class="news_list_item wow animate__fadeInUp">
+									<span class="news_list_item_img"><img src="i/news02.jpg" alt=""></span>
+									<span class="news_list_item_data -got-300 -fs-20">11 янв 2021</span>
+									<span class="news_list_item_title -fs-25">Производительность труда и поддержка занятости</span>
+								</a>
+							</div>
+							<div class="col-sm-6 col-md-6 news-col">
+								<a href="#" class="news_list_item wow animate__fadeInUp">
+									<span class="news_list_item_img"><img src="i/news03.jpg" alt=""></span>
+									<span class="news_list_item_data -got-300 -fs-20">11 янв 2021</span>
+									<span class="news_list_item_title -fs-25">Новел Групп покоряет вершины</span>
+								</a>
+							</div>
+							<div class="col-sm-6 col-md-6 news-col">
+								<a href="#" class="news_list_item wow animate__fadeInUp">
+									<span class="news_list_item_img"><img src="i/news04.jpg" alt=""></span>
+									<span class="news_list_item_data -got-300 -fs-20">11 янв 2021</span>
+									<span class="news_list_item_title -fs-25">12-13 ноября состоялся дистанционный аудит</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="news_carousel">
+						<div class="news_carousel_item">
+							<a href="#" class="news_list_item">
+								<span class="news_list_item_img"><img src="i/news01.jpg" alt=""></span>
+								<span class="news_list_item_data -got-300 -fs-20">11 янв 2021</span>
+								<span class="news_list_item_title -fs-25">Новый продукт в линейке фенольных пленок</span>
+							</a>
+						</div>
+						<div class="news_carousel_item">
+							<a href="#" class="news_list_item wow animate__fadeInUp">
+								<span class="news_list_item_img"><img src="i/news02.jpg" alt=""></span>
+								<span class="news_list_item_data -got-300 -fs-20">11 янв 2021</span>
+								<span class="news_list_item_title -fs-25">Производительность труда и поддержка занятости</span>
+							</a>
+						</div>
+						<div class="news_carousel_item">
+							<a href="#" class="news_list_item wow animate__fadeInUp">
+								<span class="news_list_item_img"><img src="i/news03.jpg" alt=""></span>
+								<span class="news_list_item_data -got-300 -fs-20">11 янв 2021</span>
+								<span class="news_list_item_title -fs-25">Новел Групп покоряет вершины</span>
+							</a>
+						</div>
+						<div class="news_carousel_item">
+							<a href="#" class="news_list_item wow animate__fadeInUp">
+								<span class="news_list_item_img"><img src="i/news04.jpg" alt=""></span>
+								<span class="news_list_item_data -got-300 -fs-20">11 янв 2021</span>
+								<span class="news_list_item_title -fs-25">12-13 ноября состоялся дистанционный аудит</span>
+							</a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="section section_form">
+				<div class="container">
+					<div class="section_content offset-xxl-2">
+						<div class="section_title">Если остались вопросы</div>
+						<div class="form_wrap">
+							<form action="">
+								<div class="form_row row">
+									<div class="col-sm-6">
+										<input class="form-control" type="text" placeholder="Имя">
+									</div>
+									<div class="col-sm-6">
+										<input class="form-control" type="text" placeholder="Телефон">
+									</div>
+								</div>
+								<div class="form_row row">
+									<div class="col-sm-6">
+										<div class="policy">
+											<input type="checkbox" class="custom-checkbox" id="policy" name="policy" value="yes">
+											<label for="policy" class="policy_text -fs-15">Нажимая «‎Отправить»‎ вы соглашаетесь с <a href="#">политикой конфиденциальности</a></label>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<button type="submit" class="btn btn-primary"><span>Оформить</span></button>
+									</div>
+								</div>
+								
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer_row row">
+					<div class="col-md-5 col-lg-5 col-xl-3 footer_col_copy">
+					
+						<div class="footer_copy -got-300 -fs-16">© 2021 ООО «Новел Групп»<br>
+							Политика конфиденциальности</div>
+					</div>
+					<div class="col-md-7 col-lg-7 col-xl-5 footer_col_menu">
+						<div class="footer_menu -got-300 -fs-16">
+							<a href="#" class="footer_menu-item">Компания</a>
+							<a href="#" class="footer_menu-item">Каталог</a>
+							<a href="#" class="footer_menu-item">Услуги</a>
+							<a href="#" class="footer_menu-item">Контакты</a>
+							<a href="#" class="footer_menu-item">Информация</a>
+						</div>
+					</div>
+					<div class="col-xl-4 d-xl-block d-none">
+						<div class="footer_contact_row">
+							<div class="footer_contact_phone">
+								<a href="tel:88469798884" class="f-phone -got-600 -fs-18">8 (846) 979-88-84</a>
+								<span class="f-phone_text -got-400 -fs-13">многоканальный</span>
+							</div>
+							<div class="footer_callback_btn">
+								<a href="#" class="callback btn btn-primary">обратный звонок</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+		</footer>
+</div>
+
+  <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+  <script src="libs/bootstrap5/bootstrap.min.js"></script>
+  <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+  <script src="libs/slick/slick.min.js"></script>
+  <script src="libs/jquery/jquery.maskedinput.min.js"></script>
+  <script src="libs/jquery/jquery-ui/jquery-ui.min.js"></script>
+  <script src="libs/animate/wow.min.js"></script>
+  <script src="libs/animate/SmoothScroll.min.js"></script>
+  <script src="libs/animate/gsap.min.js"></script>
+  <script src="libs/animate/ScrollTrigger.min.js"></script>
+  <script src="libs/animate/splitting.min.js"></script>
+
+<!-- <script src="libs/animate/jquery.mCustomScrollbar.concat.min.js"></script> -->
+  <script src="js/animation.js"></script>
+  <script src="js/common.js"></script>
+
+
+
+  <style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #0D82CD url(http://hello-site.ru//main/images/preloads/grid.svg) center center no-repeat;background-size:80px;}</style>
+  <div id="hellopreloader"><div id="hellopreloader_preload"></div></div>
+  <script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader); startAnimate();},1000);};</script>
+
+
+</body>
+</html>
+
+
+

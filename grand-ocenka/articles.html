@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Статьи</title>
+      <meta name="description" content="">
+      <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <!-- style -->
+      <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+      <link rel="stylesheet" href="libs/slick/slick.css"/>
+      <link rel="stylesheet" href="libs/slick/slick-theme.css"/>
+      <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+      <link rel="stylesheet" href="libs/jquery/jquery-ui/jquery-ui.min.css"/>
+      <link rel="stylesheet" href="libs/jquery/jquery-ui/jquery-ui.theme.min.css"/>
+      <link rel="stylesheet" href="libs/scrollbar/jquery.mCustomScrollbar.min.css"/>
+     
+      <link rel="stylesheet" href="css/common.css">
+    </head>
+    <body class="page">
+      <div class="wrapper">
+        <header class="header">
+          <div class="container">
+            <div class="header__top">
+              <div class="row -header-row">
+              <div class="col-7 col-sm-6 col-md-4 col-xl-6 -header-logo-col">
+                <div class="header__logo">
+                    <a href="/" class="logo"><img src="i/logo.svg" alt=""></a>
+                </div>
+              </div>
+              <div class="col-5 col-sm-6 col-md-8 col-xl-6 -header-contacts-col">
+                <div class="header__info">
+                  <div class="row -header-info-row">
+                    <div class="col-md-7 -header-search-col">
+                      <div class="header__search">
+                        <form class="form-search">
+                          <input class="form-search__input form-control" type="search" placeholder="Поиск по сайту" aria-label="Search">
+                          <button class="btn btn-search" type="submit"></button>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="header__contacts">
+                        <a href="tel:88007077025" class="header__phone -neu-b -fs-22">8 (800) 707-70-25</a>
+                        <a href="#" class="btn btn-primary js-callback -fs-14">получить консультацию</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="header__mobil">
+                  <a href="tel:88007077025" class="m-phone"></a>
+                  <a href="#" class="m-search"></a>
+                  <a href="#hmenu" class="m-toggle"></a>
+                </div> 
+              </div>
+              </div>
+            </div>
+            <div class="header__nav">
+              <div class="row -header-nav-row">
+                <div class="col-lg-10 -header-menu-col">
+                  <nav class="header__menu menu navbar navbar-expand-md">
+                    <a href="#hmenu" class="menu__toggle"></a>
+                    <div class="collapse navbar-collapse" id="hmenu">
+                      <div class="menu__close d-none"></div>
+                      <div class="mobil-logo d-none">
+                        <img src="i/logo.svg" alt="">
+                      </div>
+                      <ul class="navbar-nav -header-navbar">
+                        <li class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle">О компании</a>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                              <a class="dropdown-link" href="#">Наши цели</a>
+                            </li>
+                            <li class="dropdown-item">
+                              <a class="dropdown-link" href="#">Наши клиенты</a>
+                            </li>
+                            <li class="dropdown-item">
+                              <a class="dropdown-link" href="#">Отзывы</a>
+                            </li>
+                            <li class="dropdown-item">
+                              <a class="dropdown-link" href="#">Наши партнеры</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle">Услуги экспертизы</a>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                              <a class="dropdown-link" href="#">Строительно-техническая экспертиза</a>
+                            </li>
+                            <li class="dropdown-item">
+                              <a class="dropdown-link" href="#">Землеустроительная экспертиза</a>
+                            </li>
+                            <li class="dropdown-item">
+                              <a class="dropdown-link" href="#">Почерковедческая экспертиза</a>
+                            </li>
+                            <li class="dropdown-item dropdown">
+                              <a class="dropdown-link dropdown-toggle" href="#">Автотехническая экспертиза</a>
+                              <ul class="dropdown-menu dropdown-menu-second">
+                                <li class="dropdown-item">
+                                  <a class="dropdown-link" href="#">Оценка стоимости восстановительного ремонта</a>
+                                </li>
+                                <li class="dropdown-item">
+                                  <a class="dropdown-link" href="#">Оценка годных остатков</a>
+                                </li>
+                                <li class="dropdown-item">
+                                  <a class="dropdown-link" href="#">Оценка технического состояния для списания</a>
+                                </li>
+                                <li class="dropdown-item">
+                                  <a class="dropdown-link" href="#">Оценка утраты товарной стоимости – УТС</a>
+                                </li>
+                                <li class="dropdown-item">
+                                  <a class="dropdown-link" href="#">Экспертиза качества кузовного ремонта</a>
+                                </li>
+                                <li class="dropdown-item">
+                                  <a class="dropdown-link" href="#">Экспертиза двигателя</a>
+                                </li>
+                                <li class="dropdown-item">
+                                  <a class="dropdown-link" href="#">Транспортно-трасологическая экспертиза</a>
+                                </li>
+                                <li class="dropdown-item">
+                                  <a class="dropdown-link" href="#">Исследование обстоятельств ДТП</a>
+                                </li>
+                                <li class="dropdown-item">
+                                  <a class="dropdown-link" href="#">Установление наличия дефектов (неисправностей) ТС</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="dropdown-item">
+                              <a class="dropdown-link" href="#">Товароведческая экспертиза</a>
+                            </li>
+                            <li class="dropdown-item">
+                              <a class="dropdown-link" href="#">Речеведческая экспертиза</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Услуги оценки</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Контакты</a>
+                        </li>
+                        
+                      </ul>
+                      <div class="mobil-info">
+                        <div class="row -mobil-info-row">
+                          <div class="col-12">
+                            <a href="tel:88007077025" class="header__phone -neu-b -fs-14">8 (800) 707-70-25</a>
+                          </div>
+                          <div class="col-12">
+                            <a href="#" class="btn btn-primary js-callback -fs-12">оставить заявку</a>
+                          </div>
+                        </div>
+                        <div class="m-social">
+                          <a href="#" class="social-link -vk"></a>
+                          <a href="#" class="social-link -inst"></a>
+                          <a href="#" class="social-link -yt"></a>
+                          <a href="#" class="social-link -fb"></a>
+                        </div>
+                       
+                          <ul class="m-navbar -fs-12 -neu-l">
+                            <li class="nav-item">
+                              <a href="#" class="nav-link">Способы оплаты</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#" class="nav-link">Отказ от услуги</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#" class="nav-link">Описание процесса передачи данных</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#" class="nav-link">Политика конфиденциальности</a>
+                            </li>
+                          </ul>
+                        
+                      </div>
+                    </div>
+                </nav>
+                </div>
+                <div class="col-lg-2">
+                  <div class="header__social">
+                    <a href="#" class="social-link -vk"></a>
+                    <a href="#" class="social-link -inst"></a>
+                    <a href="#" class="social-link -yt"></a>
+                    <a href="#" class="social-link -fb"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        
+        <main class="main">
+          <div class="breadcrumbs">
+            <div class="container">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb -neu-l">
+                  <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Статьи</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+          <div class="content pt-4 pb-0">
+            <div class="container">
+              <h1>Статьи</h1>
+            </div>
+          </div>
+          <div class="section inner -bg-light-gray">
+            <div class="container">
+              <div class="row -articles-row">
+                <div class="col-md-6 col-xl-4 -articles-item-col">
+                  <div class="articles__item">
+                    <div class="articles__img"><img src="i/article01.jpg" alt=""></div>
+                    <div class="articles__info">
+                      <div class="articles__title -fs-25 -neu-m">Лингвистическая экспертиза оскорблений</div>
+                      <div class="articles__anons -fs-16">
+                        Согласно Конституции, право на охрану чести и достоинства лица является таким же неотъемлемым правом каждого из нас, как и право на жизнь или неприкосновенность. И в крайних случаях, когда происходит...
+                      </div>
+                      <div class="articles__btn -fs-16">
+                        <a href="" class="btn btn-link">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4 -articles-item-col">
+                  <div class="articles__item">
+                    <div class="articles__img"><img src="i/article02.jpg" alt=""></div>
+                    <div class="articles__info">
+                      <div class="articles__title -fs-25 -neu-m">Вопросы и ответы по экспертизе бухгалтерии</div>
+                      <div class="articles__anons -fs-16">
+                        Бухгалтерская экспертиза — частный случай экономической экспертизы. Проведение специалистом-экспертом анализа данных бухгалтерского учета...
+                      </div>
+                      <div class="articles__btn -fs-16">
+                        <a href="" class="btn btn-link">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4 -articles-item-col">
+                  <div class="articles__item">
+                    <div class="articles__img"><img src="i/article03.jpg" alt=""></div>
+                    <div class="articles__info">
+                      <div class="articles__title -fs-25 -neu-m">Пожарно-техническая экспертиза</div>
+                      <div class="articles__anons -fs-16">
+                        При возникновении нештатной ситуации, а именно возгорания чего-либо, происходит пожар, что сопровождается материальными убытками и уносит человеческие жизни. Для того чтобы объективно оценить ситуацию...
+                      </div>
+                      <div class="articles__btn -fs-16">
+                        <a href="" class="btn btn-link">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4 -articles-item-col">
+                  <div class="articles__item">
+                    <div class="articles__img"><img src="i/article04.jpg" alt=""></div>
+                    <div class="articles__info">
+                      <div class="articles__title -fs-25 -neu-m">Оценка бизнеса в Тольятти</div>
+                      <div class="articles__anons -fs-16">
+                        Покупка и продажа, реорганизация, банкротство — во всех этих и многих других ситуациях бизнес требует экспертизы. Оценка бизнеса — достаточно сложный, требующий внимания, квалификации в разных областях процесс...
+                      </div>
+                      <div class="articles__btn -fs-16">
+                        <a href="" class="btn btn-link">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4 -articles-item-col">
+                  <div class="articles__item">
+                    <div class="articles__img"><img src="i/article05.jpg" alt=""></div>
+                    <div class="articles__info">
+                      <div class="articles__title -fs-25 -neu-m">Особенности, методы и этапы проведения оценки бизнеса</div>
+                      <div class="articles__anons -fs-16">
+                        Оценка бизнеса — услуга, довольно востребованная на территории всей страны, не является исключением и город Тольятти. Если несколько лет назад такая процедура проводилась преимущественно как вынужденная мера...
+                      </div>
+                      <div class="articles__btn -fs-16">
+                        <a href="" class="btn btn-link">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4 -articles-item-col">
+                  <div class="articles__item">
+                    <div class="articles__img"><img src="i/article06.jpg" alt=""></div>
+                    <div class="articles__info">
+                      <div class="articles__title -fs-25 -neu-m">Независимая экспертиза в Тольятти объекты, цели, этапы</div>
+                      <div class="articles__anons -fs-16">
+                        Оценка недвижимости включает совокупность процедур, определяющих стоимость недвижимого имущества или отдельной части, если квартира находится в собственности разных владельцев. Оценка необходима для сделок...
+                      </div>
+                      <div class="articles__btn -fs-16">
+                        <a href="" class="btn btn-link">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+       
+              <nav class="pagination-nav -fs-16">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous"></a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item"><a class="page-link" href="#">6</a></li>
+                  <li class="page-item"><a class="page-link" href="#">...</a></li>
+                  <li class="page-item"><a class="page-link" href="#">15</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next"></a>
+                  </li>
+                </ul>
+              </nav>
+              
+              
+            </div>
+          </div>
+         
+          <div class="section feedback">
+            <div class="container">
+              <div class="row -feedback-row">
+                <div class="col-md-6 col-lg-8">
+                  <div class="section__title -fs-40">Обратная связь</div>
+                  <div class="feedback__form -fs-15">
+                    <form class="form">
+                      <div class="form-group -form-row row">
+                        <div class="col-lg-4 -form-col">
+                          <label for="i-name">ФИО*</label>
+                          <input type="text" name="name" class="form-control" id="i-name" placeholder="">
+                        </div>
+                        <div class="col-lg-4 -form-col">
+                          <label for="i-phone">Телефон*</label>
+                          <input type="text" name="phone" class="form-control -mask" id="i-phone" placeholder="+7 (___) - ___ - __ - __">
+                        </div>
+                        <div class="col-lg-4 -form-col">
+                          <label for="i-email">E-mail</label>
+                          <input type="email" name="email" class="form-control" id="i-email" placeholder="">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="comment">Комментарий</label>
+                        <textarea class="form-control" name="comment" id="comment" rows="2"></textarea>
+                      </div>
+                      <div class="policy">
+                        <p>Нажимая кнопку «Заказать экспертизу», вы даете согласие на обработку персональных данных на условиях и для целей, определенных <a href="#">Политикой конфиденциальности</a></p>
+                      </div>
+                      <button class="btn btn-primary" type="submit">заказать экспертизу</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 -feedback-manager-col">
+                  <div class="feedback__manager -fs-16">
+                    <div class="manager-img"><img src="i/manager.png" alt=""></div>
+                    <div class="manager-name -neu-m">Алёна Сергеевна</div>
+                    <div class="manager-text">Ответит на любые ваши вопросы</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="footer">
+          <div class="footer__top">
+            <div class="container">
+              <div class="-footer-row">
+                <div class="footer__logo">
+                  <img src="i/f-logo.svg" alt="">
+                </div>
+                <div class="footer__nav">
+                  <ul class="footer-navbar -fs-14 -neu-l">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Способы оплаты</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Отказ от услуги</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Описание процесса передачи данных</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Политика конфиденциальности</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__contacts">
+                  <a href="tel:88007077025" class="footer__phone -neu-b -fs-22">8 (800) 707-70-25</a>
+                  <a href="#" class="btn btn-primary js-callback -fs-14">оставить заявку</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__center -bg-light-gray">
+            <div class="container">
+              <nav class="navbar navbar-expand-lg footer__menu -neu-l">
+                <a href="#fmenu" class="menu__toggle"></a>
+                <div class="footer-menu collapse navbar-collapse" id="fmenu">
+                  <div class="row -footer-menu-row">
+                    <div class="col-sm-6 col-md-6 col-lg-2">
+                      <a class="nav-link footer-menu__title -fs-20" href="#">О компании</a>
+                      <ul class="nav footer-menu__item -fs-14">
+                          <li class="nav-item"><a class="nav-link" href="#">О компании</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">Наши партнеры</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">Отзывы</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">Вакансии</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">Статьи</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                      <a class="nav-link footer-menu__title -fs-20" href="#">Услуги экспертизы</a>
+                      <ul class="nav footer-menu__item -fs-14">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Строительно-техническая экспертиза</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Почерковедческая экспертиза</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Финансово-экономическая экспертиза</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Автотехническая экспертиза</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Экспертиза промыш ленной безопасности</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Землеустроительная экспертиза</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Речеведческие экспертизы</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                      <a class="nav-link footer-menu__title -fs-20" href="#">Услуги оценки</a>
+                      <ul class="nav footer-menu__item -fs-14">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Оценка недвижимости </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Оценка движимого имущества</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Оценка бизнеса</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="footer__bottom -bg-light-gray">
+            <div class="container">
+              <div class="row -footer-bottom-row">
+                <div class="col-lg-7">
+                  <div class="copy -fs-14 -neu-l">ООО «Агентство независимых экспертиз «Гранд Истейт»</div>
+                </div>
+                <div class="col-lg-2">
+                  <div class="footer__social">
+                    <a href="#" class="social-link -vk"></a>
+                    <a href="#" class="social-link -inst"></a>
+                    <a href="#" class="social-link -yt"></a>
+                    <a href="#" class="social-link -fb"></a>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="youtube-subscribe -fs-11">
+                    <span class="youtube-subscribe__text -neu-b">Здесь вы найдете все ответы</span>
+                    <a href="#" class="youtube-subscribe__link">Подписаться</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="footer__dev">
+            <div class="container">
+              <div class="dev -center">
+                <span class="dev-text -fs-13">Разработка сайта </span>
+                <a href="#" class="dev-logo"><img src="i/acticom.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+      <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+      <script src="libs/bootstrap/bootstrap.min.js"></script>
+      <script src="libs/slick/slick.min.js"></script>
+      <script src="libs/jquery/jquery.maskedinput.min.js"></script>
+      <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+      <script src="libs/jquery/jquery-ui/jquery-ui.min.js"></script>
+      <script src="libs/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/common.js"></script>
+   </body>
+</html>

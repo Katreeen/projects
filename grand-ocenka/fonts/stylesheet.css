@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'Neue Haas Unica ExtBlk';
+    src: url('NeueHaasUnica-ExtBlkIta.eot');
+    src: url('NeueHaasUnica-ExtBlkIta.eot?#iefix') format('embedded-opentype'),
+        url('NeueHaasUnica-ExtBlkIta.woff2') format('woff2'),
+        url('NeueHaasUnica-ExtBlkIta.woff') format('woff'),
+        url('NeueHaasUnica-ExtBlkIta.ttf') format('truetype'),
+        url('NeueHaasUnica-ExtBlkIta.svg#NeueHaasUnica-ExtBlkIta') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica';
+    src: url('NeueHaasUnica-Black.eot');
+    src: url('NeueHaasUnica-Black.eot?#iefix') format('embedded-opentype'),
+        url('NeueHaasUnica-Black.woff2') format('woff2'),
+        url('NeueHaasUnica-Black.woff') format('woff'),
+        url('NeueHaasUnica-Black.ttf') format('truetype'),
+        url('NeueHaasUnica-Black.svg#NeueHaasUnica-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica';
+    src: url('NeueHaasUnica-Bold.eot');
+    src: url('NeueHaasUnica-Bold.eot?#iefix') format('embedded-opentype'),
+        url('NeueHaasUnica-Bold.woff2') format('woff2'),
+        url('NeueHaasUnica-Bold.woff') format('woff'),
+        url('NeueHaasUnica-Bold.ttf') format('truetype'),
+        url('NeueHaasUnica-Bold.svg#NeueHaasUnica-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica';
+    src: url('NeueHaasUnica-BoldItalic.eot');
+    src: url('NeueHaasUnica-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('NeueHaasUnica-BoldItalic.woff2') format('woff2'),
+        url('NeueHaasUnica-BoldItalic.woff') format('woff'),
+        url('NeueHaasUnica-BoldItalic.ttf') format('truetype'),
+        url('NeueHaasUnica-BoldItalic.svg#NeueHaasUnica-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica ExtLt';
+    src: url('NeueHaasUnica-ExtLtIta.eot');
+    src: url('NeueHaasUnica-ExtLtIta.eot?#iefix') format('embedded-opentype'),
+        url('NeueHaasUnica-ExtLtIta.woff2') format('woff2'),
+        url('NeueHaasUnica-ExtLtIta.woff') format('woff'),
+        url('NeueHaasUnica-ExtLtIta.ttf') format('truetype'),
+        url('NeueHaasUnica-ExtLtIta.svg#NeueHaasUnica-ExtLtIta') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica ExtBlk';
+    src: url('NeueHaasUnica-ExtraBlack.eot');
+    src: url('NeueHaasUnica-ExtraBlack.eot?#iefix') format('embedded-opentype'),
+        url('NeueHaasUnica-ExtraBlack.woff2') format('woff2'),
+        url('NeueHaasUnica-ExtraBlack.woff') format('woff'),
+        url('NeueHaasUnica-ExtraBlack.ttf') format('truetype'),
+        url('NeueHaasUnica-ExtraBlack.svg#NeueHaasUnica-ExtraBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica ExtBd';
+    src: url('NeueHaasUnica-ExtraBold.eot');
+    src: url('NeueHaasUnica-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('NeueHaasUnica-ExtraBold.woff2') format('woff2'),
+        url('NeueHaasUnica-ExtraBold.woff') format('woff'),
+        url('NeueHaasUnica-ExtraBold.ttf') format('truetype'),
+        url('NeueHaasUnica-ExtraBold.svg#NeueHaasUnica-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica ExtBd';
+    src: url('NeueHaasUnica-ExtraBoldItalic.eot');
+    src: url('NeueHaasUnica-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('NeueHaasUnica-ExtraBoldItalic.woff2') format('woff2'),
+        url('NeueHaasUnica-ExtraBoldItalic.woff') format('woff'),
+        url('NeueHaasUnica-ExtraBoldItalic.ttf') format('truetype'),
+        url('NeueHaasUnica-ExtraBoldItalic.svg#NeueHaasUnica-ExtraBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica Med';
+    src: url('NeueHaasUnica-Medium.eot');
+    src: url('NeueHaasUnica-Medium.eot?#iefix') format('embedded-opentype'),
+        url('NeueHaasUnica-Medium.woff2') format('woff2'),
+        url('NeueHaasUnica-Medium.woff') format('woff'),
+        url('NeueHaasUnica-Medium.ttf') format('truetype'),
+        url('NeueHaasUnica-Medium.svg#NeueHaasUnica-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica';
+    src: url('NeueHaasUnica-ExtraLight.eot');
+    src: url('NeueHaasUnica-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('NeueHaasUnica-ExtraLight.woff2') format('woff2'),
+        url('NeueHaasUnica-ExtraLight.woff') format('woff'),
+        url('NeueHaasUnica-ExtraLight.ttf') format('truetype'),
+        url('NeueHaasUnica-ExtraLight.svg#NeueHaasUnica-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica';
+    src: url('NeueHaasUnica-Italic.eot');
+    src: url('NeueHaasUnica-Italic.eot?#iefix') format('embedded-opentype'),
+        url('NeueHaasUnica-Italic.woff2') format('woff2'),
+        url('NeueHaasUnica-Italic.woff') format('woff'),
+        url('NeueHaasUnica-Italic.ttf') format('truetype'),
+        url('NeueHaasUnica-Italic.svg#NeueHaasUnica-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica';
+    src: url('NeueHaasUnica-Regular.eot');
+    src: url('NeueHaasUnica-Regular.eot?#iefix') format('embedded-opentype'),
+        url('NeueHaasUnica-Regular.woff2') format('woff2'),
+        url('NeueHaasUnica-Regular.woff') format('woff'),
+        url('NeueHaasUnica-Regular.ttf') format('truetype'),
+        url('NeueHaasUnica-Regular.svg#NeueHaasUnica-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica';
+    src: url('NeueHaasUnica-Thin.eot');
+    src: url('NeueHaasUnica-Thin.eot?#iefix') format('embedded-opentype'),
+        url('NeueHaasUnica-Thin.woff2') format('woff2'),
+        url('NeueHaasUnica-Thin.woff') format('woff'),
+        url('NeueHaasUnica-Thin.ttf') format('truetype'),
+        url('NeueHaasUnica-Thin.svg#NeueHaasUnica-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica Med';
+    src: url('NeueHaasUnica-MediumItalic.eot');
+    src: url('NeueHaasUnica-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('NeueHaasUnica-MediumItalic.woff2') format('woff2'),
+        url('NeueHaasUnica-MediumItalic.woff') format('woff'),
+        url('NeueHaasUnica-MediumItalic.ttf') format('truetype'),
+        url('NeueHaasUnica-MediumItalic.svg#NeueHaasUnica-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica';
+    src: url('NeueHaasUnica-ThinItalic.eot');
+    src: url('NeueHaasUnica-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('NeueHaasUnica-ThinItalic.woff2') format('woff2'),
+        url('NeueHaasUnica-ThinItalic.woff') format('woff'),
+        url('NeueHaasUnica-ThinItalic.ttf') format('truetype'),
+        url('NeueHaasUnica-ThinItalic.svg#NeueHaasUnica-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+

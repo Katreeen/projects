@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Карточка товара</title>
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="libs/custom-select/custom-select.css">
+  <link rel="stylesheet" href="css/common.css">
+</head>
+<body class="product-card">
+  <div class="wrapper">
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row g-0 -header-row">
+          <div class="col-auto">
+            <div class="header__logo">
+              <a href="/" class="logotype"><img src="i/logo.svg" alt=""></a>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="header__right">
+              <div class="row -h-row">
+                <div class="col-auto -col-back">
+                  <a href="#" class="link-back">Вернуться назад</a>
+                </div>
+                <div class="col-auto">
+                  <div class="header__search">
+                    <a href="#" class="search-link"></a>
+                      <form class="form-inline search-form">
+                        <input class="form-control" type="search" placeholder="Поиск..." aria-label="Search">
+                        <button class="btn btn-search" type="submit"></button>
+                        <button class="btn btn-close" type="button"></button>
+                      </form>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="header__basket">
+                    <a href="#" class="basket-link">
+                      <span class="basket-amount">2</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="header__login">
+                    <a href="#" class="user">
+                      <span class="user-icon"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <nav class="header__navbar navbar">
+                    <button class="navbar-toggler btn -open-menu" type="button">
+                      <span class="icon-toggle"></span>
+                    </button>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="drop__menu">
+          <div class="drop__wrap">
+            <div class="drop__top">
+              <div class="drop-top-row row">
+                <div class="col-auto">
+                  <div class="drop__logo">
+                    <a href="/" class="logotype"><img src="i/logo.svg" alt=""></a>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="drop__search">
+                    <a href="#" class="search-link"></a>
+                    <div class="search-wrap">
+                      <form class="form-inline search-form">
+                        <input class="form-control" type="search" placeholder="Поиск..." aria-label="Search">
+                        <button class="btn btn-search" type="submit"></button>
+                      </form>
+                  </div>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="drop__basket">
+                    <a href="#" class="basket-link">
+                      <span class="basket-amount">2</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="drop__login">
+                    <a href="#" class="user">
+                      <span class="user-icon"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <button class="navbar-close btn" type="button">
+                    <span class="icon-close"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <nav class="header__navbar navbar">
+              <ul class="nav-menu -fs-20 -mns-b">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">форма</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">экипировка</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">одежда</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">атрибутика</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">аксессуары</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">доставка и оплата</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">условия возврата</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">документы</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">билеты</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="drop__bottom -mns-m -fs-14">
+              <div class="drop-row">
+                <a href="#" class="social-link -vk"></a>
+                <a href="#" class="social-link -tg"></a>
+                <a href="#" class="drop-logo">ФК Акрон</a>
+              </div>
+              <div class="drop-copy -white">© 2022 Футбольный клуб «Акрон»<br>
+                Все права защищены</div>
+            </div>
+          </div>
+        </div>
+    </header>
+    <main class="main">
+      <div class="product">
+        <div class="container-fluid">
+          <div class="row -product-row">
+            <div class="col-md-6 -col-product-img">
+                <div class="product-slider">
+                  
+                    <div class="product-slide"><img src="i/proruct.png" alt="1"></div>
+                    <div class="product-slide"><img src="i/proruct.png" alt="2"></div>
+                    <div class="product-slide"><img src="i/proruct.png" alt="3"></div>
+                  
+                </div>
+                <div class="product-slider swiper mobil-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide product-slide"><img src="i/proruct.png" alt="1"></div>
+                    <div class="swiper-slide product-slide"><img src="i/proruct.png" alt="2"></div>
+                    <div class="swiper-slide product-slide"><img src="i/proruct.png" alt="3"></div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-5 col-xl-4 offset-lg-1 -col-product-info -sticky">
+              <div class="product__info -mrp-m pb-6 card-sticky">
+                <div class="product__art -fs-12">Артикул 153 875</div>
+                <div class="product__ttl"><h1>Комплект шапка и перчатки</h1></div>
+                <div class="product__desc">Удобные перчатки и шапка сшиты из мягкого и очень теплого флиса с водоотталкивающими свойствами. </div>
+                <div class="product__option pt-4">
+                  <div class="row -option-row">
+                    <div class="col-auto">
+                      <div class="option__name pb-3">Шапка</div>
+                      <select name="size1" id="size1" class="option__select">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                      </select>
+                    </div>
+                    <div class="col-auto">
+                      <div class="option__name pb-3">Перчатки</div>
+                      <select name="size2" id="size2" class="option__select">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__bottom mt-5 pt-4">
+                  <div class="row -product-bottom-row">
+                    <div class="col-auto">
+                      <div class="product__price -fs-25 -mrp-exb">
+                        <span>1 090 ₽</span>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="product__quantity">
+                          <button class="quantity-minus" type="button" value="-1">−</button>
+                          <input class="quantity-number" type="number" name="count" value="1">
+                          <button class="quantity-plus" type="button" value="+1">+</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product__btn pt-4">
+                    <button class="btn btn-card">В КОРЗИНУ</button>
+                  </div>
+                </div>
+                <div class="product-thumbs mt-6">
+                    <div class="product-thumb active"><img src="i/thumb1.png" alt=""></div>
+                    <div class="product-thumb"><img src="i/thumb2.png" alt=""></div>
+                    <div class="product-thumb"><img src="i/thumb3.png" alt=""></div>
+                </div>
+                <div class="product-thumbs swiper mt-6 mobil-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide product-thumb"><img src="i/thumb1.png" alt=""></div>
+                    <div class="swiper-slide product-thumb"><img src="i/thumb2.png" alt=""></div>
+                    <div class="swiper-slide product-thumb"><img src="i/thumb3.png" alt=""></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row -footer-row -mrp-m -fs-14">
+          <div class="col-xl-3 -col-copy">
+            <div class="copy">© 2022 Футбольный клуб «Акрон» <br>Все права защищены</div>
+          </div>
+          <div class="col-xl-6 -col-menu">
+            <ul class="footer__menu">
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+              <li>
+                <a href="#">Доставка и оплата</a>
+              </li>
+              <li>
+                <a href="#">Условия возврата</a>
+              </li>
+              <li>
+                <a href="#">Документы</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-3 -col-dev">
+            <div class="dev">
+              <div class="dev__text">Сделано руками</div>
+              <a href="#" class="dev__logo"><img src="i/dev-logo.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <button class="btn btn-top"></button>
+  <script src="libs/bootstrap/bootstrap.min.js"></script>
+  <script src="libs/swiper/swiper-bundle.min.js"></script>
+  <script src="libs/custom-select/custom-select.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>

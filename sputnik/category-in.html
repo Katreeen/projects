@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Категория</title>
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="libs/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="libs/scroll/simplebar.css" />
+  <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="row g-0 -header-top-row">
+          <div class="col-auto -col-geo">
+            <div class="header__geo">
+              <select name="city" id="city" class="form-select">
+                <option value="Ярославль">Ярославль</option>
+                <option value="Симферополь">Симферополь</option>
+                <option value="Ижевск">Ижевск</option>
+                <option value="Саратов">Саратов</option>
+                <option value="Екатеринбург">Екатеринбург</option>
+                <option value="Краснодар">Краснодар</option>
+                <option value="Чебоксары">Чебоксары</option>
+                <option value="Ульяновск"> Ульяновск</option>
+                <option value="Оренбург">Оренбург</option>
+                <option value="Уфа">Уфа</option>
+                <option value="Тольятти">Тольятти</option>
+                <option value="Самара" selected>Самара</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-auto -col-wtime">
+            <div class="header__wtime -fs-14">
+              <span>Режим работы:</span> Пн-Пт 9:00 – 19:00, Сб 10:00 – 16:00
+            </div>
+          </div>
+          <div class="col-auto -col-phone">
+            <div class="header__phone -fs-14 -noto-m">
+              <a href="tel:88005506057">8 (800) 550 60 57</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__center">
+      <div class="container">
+        <div class="row g-0 -header-row">
+          <div class="col-md-3 col-lg-auto -col-logo">
+            <a href="#" class="logotype"><img src="i/logo.svg" alt=""></a>
+          </div>
+          <div class="col-md-9 col-lg-8 -col-hmenu">
+            <nav class="navbar navbar-expand-sm navbar-light">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hmenu"
+                aria-controls="hmenu" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="hmenu">
+                <ul class="navbar-nav me-auto hmenu-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Стать партнером</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Доставка</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Оплата</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      О компании
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Новости</a></li>
+                      <li><a class="dropdown-item" href="#">Статьи</a></li>
+                      <li><a class="dropdown-item" href="#">Реквизиты</a></li>
+                      <li><a class="dropdown-item" href="#">Сервисный центр</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="col-md-12 col-lg-auto -col-social">
+            <div class="header__social social">
+              <a href="#" class="-wa"></a>
+              <a href="#" class="-vb"></a>
+              <a href="#" class="-inst"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <div class="row -header-row">
+          <div class="col-3 col-sm-2 col-md-2 col-lg-3 -col-catalog">
+            <div class="header__catalog">
+              <nav class="navbar header__navbar">
+                <button class="navbar-toggler btn catalog-btn" type="button">
+                  <span class="icon-toggle"></span>
+                  Каталог товаров
+                </button>
+              </nav>
+            </div>
+          </div>
+          <div class="col-4 col-sm-4 col-md-6 col-lg-4 col-md-6 col-sm-6 -col-user">
+            <div class="row -user-row">
+              <div class="col-6 col-sm-12 col-md-6">
+                <div class="header__login">
+                  <span class="icon-user"></span>
+                  <a href="#">Личный кабинет</a>
+                </div>
+              </div>
+              <div class="col-6 col-sm-12 col-md-6">
+                <div class="header__b2b">
+                  <span class="icon-user"></span>
+                  <a href="#">Вход B2B</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-1 col-sm-2 col-md-1 col-lg-3 -col-search">
+            <div class="search-icon d-lg-none toggle-search"></div>
+            <div class="header__search">
+              <form class="d-flex form-search">
+                <input class="form-control" type="search" placeholder="Поиск" aria-label="Search">
+                <button class="btn btn-search" type="submit"></button>
+              </form>
+            </div>
+          </div>
+          <div class="col-4 col-9 col-sm-4 col-md-auto col-lg-auto -col-shop">
+            <div class="header__shop">
+              <a class="favorite-link" href="#">
+                <span class="favorite-amount">3</span>
+              </a>
+              <a class="card-link" href="#">
+                <span class="card-amount">3</span>
+              </a>
+            </div>
+          </div>
+          <div class="catalog-drop -fs-14" id="catalog-menu">
+            <div class="tabs">
+              <div class="nav-box nav flex-column -noto-m">
+                <button class="nav-link active"><span class="icon"><img src="i/icon-cat01.svg" alt=""></span>Кабельная
+                  продукция</button>
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat02.svg" alt=""></span> Эфирное
+                  оборудование</button>
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat03.svg" alt=""></span> Андроид приставки
+                  и асессуары</button>
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat04.svg" alt=""></span> Спутниковое
+                  оборудование</button>
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat05.svg" alt=""></span> Кронштейны ТВ,
+                  СВЧ</button>
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat06.svg" alt=""></span> Усилители
+                  мобильной связи GSMM/3G/4G</button>
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat07.svg" alt=""></span> Мобильные
+                  аксессуары</button>
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat08.svg" alt=""></span> Пульты
+                  дистанционного управления и аксессуары</button>
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat09.svg" alt=""></span>
+                  Инструменты</button>
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat01.svg" alt=""></span> Климатическая
+                  техника</button>
+
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat01.svg" alt=""></span> Климатическая
+                  техника</button>
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat01.svg" alt=""></span> Климатическая
+                  техника</button>
+                <button class="nav-link"><span class="icon"><img src="i/icon-cat01.svg" alt=""></span> Климатическая
+                  техника</button>
+              </div>
+              <div class="tab-content">
+                <div class="tab-item fade show active">
+                  <ul class="cat-menu">
+                    <li class="nav-item">
+                      <a class="nav-link parent -noto-m" href="#">Кабель акустический</a>
+                      <ul class="sub-menu">
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Кабель для видеонаблюдения</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Кабель информационный UTP/FTP</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Кабель магистральный 75 Ом</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Кабель радиочастотный 50 Ом</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Кабель телевизионный 75 Ом</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Кабель телефонный</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Кабель электрический</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link parent -noto-m" href="#">USB флешки и карты памяти</a>
+                      <ul class="sub-menu">
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Автомобильные аксессуары</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Зарядные устройство</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Кабель для смартфонов</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Картридеры и USB разветвители</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Моноподы, Селфи-лампы, объективы</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link parent -noto-m" href="#">Онлайн кассы</a>
+                      <ul class="sub-menu">
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Весы</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Денежные ящики</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Доп. оборудование</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Кассы</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">ОФД</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Принтеры этикеток</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Сканеры</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Термолента и термоэтикетки</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Фискальные накопители</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link parent -noto-m" href="#">Портативная акустика</a>
+                      <ul class="sub-menu">
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Bluetooth колонки</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Колонки для компьютеров</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Радиоприемники</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link parent -noto-m" href="#">Эфирное оборудование</a>
+                      <ul class="sub-menu">
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">DVB-T2 приставки для телевизора</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Антенны для цифрового ТВ DVB-T2</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Антенны комнатные всеволновые</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Антенны улич ные всеволновые</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Делители, ответвители, диплексоры</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Мачты, кронштейны</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Пульты для T2 приставок, телевизоров</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Усилители эфирного и кабельного ТВ</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link parent -noto-m">Андроид приставки и асессуары</a>
+                      <ul class="sub-menu">
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Air Mouse (аэромыши)</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Smart-TV приставки</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-item fade">222</div>
+                <div class="tab-item fade">333</div>
+                <div class="tab-item fade">444</div>
+                <div class="tab-item fade">...</div>
+                <div class="tab-item fade">...</div>
+                <div class="tab-item fade">...</div>
+                <div class="tab-item fade">...</div>
+                <div class="tab-item fade">...</div>
+                <div class="tab-item fade">...</div>
+              </div>
+            </div>
+          </div>
+          <div class="mobil-drop -fs-14" id="mobil-menu">
+            <div class="mobil-drop-top">
+              <div class="mobil-phone">
+                <a href="tel:79999999999"></a>
+              </div>
+              <div class="mobil-menu-close">
+                <a href="#"></a>
+              </div>
+            </div>
+            <div class="mobil-drop-search">
+              <div class="mobil__search -fs-18">
+                <form class="d-flex form-search">
+                  <input class="form-control" type="search" placeholder="Поиск" aria-label="Search">
+                  <button class="btn btn-search" type="submit"></button>
+                </form>
+              </div>
+            </div>
+            <div class="mobil-drop-menu">
+              <ul class="navbar-nav me-auto mobil-nav -fs-22">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Каталог товаров</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Стать партнером</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Доставкам</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Оплата</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">О компании</a>
+                  <ul class="submenu -fs-16">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Статьи</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Реквизиты</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Сервисный центр</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Контакты</a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="mobil__user -fs-22">
+              <div class="mobil__login">
+                <span class="icon-user"></span>
+                <a href="#">Личный кабинет</a>
+              </div>
+              <div class="mobil__b2b">
+                <span class="icon-user"></span>
+                <a href="#">Вход B2B</a>
+              </div>
+            </div>
+            <div class="mobil__social social">
+              <a href="#" class="-wa"></a>
+              <a href="#" class="-vb"></a>
+              <a href="#" class="-inst"></a>
+            </div>
+            <div class="mobil__copy -center -fs-14">2022 © Компания «Спутник». Все права защищены</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <nav aria-label="breadcrumb" class="breadcrumbs -fs-12">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Главная</a></li>
+          <li class="breadcrumb-item"><a href="#">Каталог товаров</a></li>
+          <li class="breadcrumb-item"><a href="#">Кабельная продукция</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Кабель акустический</li>
+        </ol>
+      </div>
+    </nav>
+    <div class="section main__title">
+      <div class="container">
+        <h1>Кабель акустический</h1>
+      </div>
+    </div>
+    <div class="main__content pt-0">
+      <div class="container">
+        <div class="catalog">
+          <div class="row -catalog-row">
+            <div class="col-md-3">
+              <!-- <div class="filter-open-btn d-md-none">
+                <button class="btn btn-fourth">Фильтр</button>
+              </div> -->
+              <div class="catalog__filter -fs-14">
+                <!-- <div class="filter-close-btn d-md-none">
+                  <button class="btn btn-fourth">&#10006;</button>
+                </div> -->
+                <form action="" class="form-filter">
+                  <div class="filter-item">
+                    <div class="filter-title">
+                      <span class="filter-parameters">Rexant <span class="icon-down"></span>
+                      </span>
+                    </div>
+                    <div class="filter-dropdown">
+                      <div class="filter-dropdown-wrap">
+                        <div class="checkbox filter-dropdown-item">
+                          <input type="checkbox" value="Y" name="f-item1" id="f-item1" class="custom-checkbox">
+                          <label for="f-item1">Proconnect (21)</label>
+                        </div>
+                        <div class="checkbox filter-dropdown-item">
+                          <input type="checkbox" value="Y" name="f-item2" id="f-item2" class="custom-checkbox">
+                          <label for="f-item2">Proconnect (21)</label>
+                        </div>
+                        <div class="checkbox filter-dropdown-item">
+                          <input type="checkbox" value="Y" name="f-item3" id="f-item3" class="custom-checkbox">
+                          <label for="f-item3">Proconnect (21)</label>
+                        </div>
+                        <div class="checkbox filter-dropdown-item">
+                          <input type="checkbox" value="Y" name="f-item4" id="f-item4" class="custom-checkbox">
+                          <label for="f-item4">Proconnect (21)</label>
+                        </div>
+                        <div class="checkbox filter-dropdown-item">
+                          <input type="checkbox" value="Y" name="f-item5" id="f-item5" class="custom-checkbox">
+                          <label for="f-item5">Proconnect (21)</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-item">
+                    <div class="filter-title">
+                      <span class="filter-parameters">Бренд <span class="icon-down"></span>
+                      </span>
+                    </div>
+                    <div class="filter-dropdown">
+                      <div class="filter-dropdown-wrap">
+                        <div class="checkbox filter-dropdown-item">
+                          <input type="checkbox" value="Y" name="f-item21" id="f-item21" class="custom-checkbox">
+                          <label for="f-item21">PREMIER (1)</label>
+                        </div>
+                        <div class="checkbox filter-dropdown-item">
+                          <input type="checkbox" value="Y" name="f-item22" id="f-item22" class="custom-checkbox">
+                          <label for="f-item22">Proconnect (12)</label>
+                        </div>
+                        <div class="checkbox filter-dropdown-item">
+                          <input type="checkbox" value="Y" name="f-item23" id="f-item23" class="custom-checkbox">
+                          <label for="f-item23">Rexant (13)</label>
+                        </div>
+                        <div class="checkbox filter-dropdown-item">
+                          <input type="checkbox" value="Y" name="f-item24" id="f-item24" class="custom-checkbox">
+                          <label for="f-item24">PREMIER (1)</label>
+                        </div>
+                        <div class="checkbox filter-dropdown-item">
+                          <input type="checkbox" value="Y" name="f-item25" id="f-item25" class="custom-checkbox">
+                          <label for="f-item25">Proconnect (12)</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-item">
+                    <div class="filter-title">
+                      <span class="filter-parameters">Длина бухты, м <span class="icon-down"></span>
+                      </span>
+                    </div>
+                    <div class="filter-dropdown">
+                      <div class="filter-dropdown-wrap">
+                        <div class="checkbox filter-dropdown-item">
+                          <input type="checkbox" value="Y" name="f-item31" id="f-item31" class="custom-checkbox">
+                          <label for="f-item31">100 (23)</label>
+                        </div>
+                        <div class="checkbox filter-dropdown-item">
+                          <input type="checkbox" value="Y" name="f-item32" id="f-item32" class="custom-checkbox">
+                          <label for="f-item32">5 (2)</label>
+                        </div>
+                        <div class="checkbox filter-dropdown-item">
+                          <input type="checkbox" value="Y" name="f-item33" id="f-item33" class="custom-checkbox">
+                          <label for="f-item33">10 (1)</label>
+                        </div>
+                        <div class="checkbox filter-dropdown-item">
+                          <input type="checkbox" value="Y" name="f-item34" id="f-item34" class="custom-checkbox">
+                          <label for="f-item34">100 (23)</label>
+                        </div>
+                        <div class="checkbox filter-dropdown-item">
+                          <input type="checkbox" value="Y" name="f-item35" id="f-item35" class="custom-checkbox">
+                          <label for="f-item35">5 (2)</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-btn">
+                    <button class="btn btn-fourth">Применить</button>
+                    <button class="btn btn-fourth">Сбросить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="catalog__panel">
+                <div class="catalog__sort">
+                  <select name="sort" id="sort-products" class="form-select sort-products">
+                    <option value="" selected>Сортировать</option>
+                    <option value="popular">По популярности</option>
+                    <option value="name">По имени</option>
+                    <option value="price">По цене</option>
+                  </select>
+                </div>
+                <div class="catalog__view">
+                  <a href="?view=table" class="view table-icon"></a>
+                  <a href="?view=tile" class="view tile-icon active"></a>
+                </div>
+              </div>
+              <div class="products products-tile">
+                <div class="catalog-section">
+                  <div class="product-item">
+                    <div class="row -product-item-row">
+                      <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2 -col-tile-img">
+                        <div class="product-mark -fs-12 -noto-m">Спец. предложение</div>
+                        <a href="#" class="product-img"><img src="i/product02.png" alt=""></a>
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-5 col-xl-5 -col-tile-info">
+                        <div class="product-info">
+                          <div class="product-title">Антенна комнатная Волжанка активная TWIN USB 3м с присоской</div>
+                          <div class="product-art">Артикул: PNL-IP4-V12MPA v.5.1.6</div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-lg-4 col-xl-5 -col-tile-card">
+                        <div class="product-card">
+                          <div class="row -product-row">
+                            <div class="col-6 col-md-auto">
+                              <div class="product-price -fs-30 -noto-sb">497 ₽</div>
+                            </div>
+                            <div class="col-6 col-md-auto">
+                              <button class="btn btn-buy-full">В корзину</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="product-item">
+                    <div class="row -product-item-row">
+                      <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2 -col-tile-img">
+                        <div class="product-mark -fs-12 -noto-m">Новинка</div>
+                        <a href="#" class="product-img"><img src="i/no-photo.png" alt=""></a>
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-5 col-xl-5 -col-tile-info">
+                        <div class="product-info">
+                          <div class="product-title">Эвотор 7.3 Смарт-терминал без ФН</div>
+                          <div class="product-art">Артикул: PNL-IP4-V12MPA v.5.1.6</div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-lg-4 col-xl-5 -col-tile-card">
+                        <div class="product-card">
+                          <div class="row -product-row">
+                            <div class="col-6 col-md-auto">
+                              <div class="product-price -fs-30 -noto-sb">21 500 ₽</div>
+                            </div>
+                            <div class="col-6 col-md-auto">
+                              <button class="btn btn-buy-full">В корзину</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item">
+                    <div class="row -product-item-row">
+                      <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2 -col-tile-img">
+                        <div class="product-mark -fs-12 -noto-m">Новинка</div>
+                        <a href="#" class="product-img"><img src="i/product03.png" alt=""></a>
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-5 col-xl-5 -col-tile-info">
+                        <div class="product-info">
+                          <div class="product-title">Кабель электрический ГОСТ 31996-2012 ВВГ- нг(А)-LS 4x1,5: (100м)
+                          </div>
+                          <div class="product-art">Артикул: PNL-IP4-V12MPA v.5.1.6</div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-lg-4 col-xl-5 -col-tile-card">
+                        <div class="product-card">
+                          <div class="row -product-row">
+                            <div class="col-6 col-md-auto">
+                              <div class="product-price -fs-30 -noto-sb">78 ₽</div>
+                            </div>
+                            <div class="col-6 col-md-auto">
+                              <button class="btn btn-buy-full">В корзину</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <nav class="page-navigation">
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Ближе</a></li>
+                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                    <li class="page-item"><a class="page-link" href="#">7</a></li>
+                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Дальше</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section mailing -bg-green">
+      <div class="container">
+        <div class="row -mailing-row">
+          <div class="col-md-6 col-lg-6 col-xl-auto">
+            <div class="form__text -mail-icon">Подпишитесь на нашу рассылку</div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-auto">
+            <form action="" class="form">
+              <div class="form-row">
+                <input type="text" class="form-control" placeholder="E-mail">
+                <button type="submit" class="btn btn-primary">Подписаться</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6 col-xl-auto">
+            <div class="form__info -fs-12">Нажимая кнопку «Подписаться» вы даете согласие на обработку персональных
+              данных </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </main>
+  <footer class="footer -bg-black">
+    <div class="container">
+      <div class="row -footer-row">
+        <div class="col-md-6">
+          <div class="footer__menu">
+            <div class="row -footer-menu-row g-0">
+              <div class="col-lg-4 col-md-6 col-sm-6 fmenu-col">
+                <a href="#" class="fmenu-title -fs-18">О компании</a>
+                <ul class="fmenu-sub -fs-14">
+                  <li class="fmenu-item">
+                    <a href="#" class="fmenu-link">Новости</a>
+                  </li>
+                  <li class="fmenu-item">
+                    <a href="#" class="fmenu-link">Статьи</a>
+                  </li>
+                  <li class="fmenu-item">
+                    <a href="#" class="fmenu-link">Реквизиты</a>
+                  </li>
+                  <li class="fmenu-item">
+                    <a href="#" class="fmenu-link">Сервисный центр</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-8 fmenu-col">
+                <div class="row -fmenu-row">
+                  <div class="col-lg-6">
+                    <a href="#" class="fmenu-title -fs-18">Каталог товаров</a>
+                  </div>
+                  <div class="col-lg-6">
+                    <a href="#" class="fmenu-title -fs-18">Стать партнером</a>
+                  </div>
+                  <div class="col-lg-6">
+                    <a href="#" class="fmenu-title -fs-18">Доставка</a>
+                  </div>
+                  <div class="col-lg-6">
+                    <a href="#" class="fmenu-title -fs-18">Оплата</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row -fcontacts">
+            <div class="col-md-auto">
+              <div class="footer__contacts">
+                <div class="fmenu-title -fs-20 d-none d-md-block">Контакты</div>
+                <div class="footer__address">443080, г. Самара, ул. Санфировой, д.95 , оф. 316</div>
+                <div class="footer__wtime"><span>Режим работы:</span> Пн-Вс 9:00 – 19:00</div>
+                <div class="footer__map">Адреса магазинов</div>
+              </div>
+            </div>
+            <div class="col-md-auto">
+              <div class="footer__social fsocial">
+                <a href="#" class="-vk"></a>
+                <a href="#" class="-yt"></a>
+                <a href="#" class="-inst"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row -footer-row fbottom-row">
+        <div class="col-lg-6 col-xl-6 -footer-copy-col">
+          <div class="footer-copy -fs-14">2021 © Компания «Спутник». Все права защищены</div>
+        </div>
+        <div class="col-lg-6 col-xl-auto -footer-pay-col">
+          <div class="row g-0 -pay-row">
+            <div class="pay-item -mir"></div>
+            <div class="pay-item -visa"></div>
+            <div class="pay-item -mcard"></div>
+          </div>
+        </div>
+        <div class="col-lg-7 col-xl-auto -footer-dev-col">
+          <div class="dev">
+            <span class="dev-text">Сделано руками</span><img src="i/logo-akticom.svg" alt="" class="dev-logo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="popup popup-review" id="popup-review">
+    <div class="popup__wrap">
+      <div class="popup__title -rub-m -fs-30 -center">Оставить отзыв</div>
+      <form action="" class="review__form">
+        <div class="row -review-row">
+          <div class="col-12 -review-col">
+            <label for="r-name" class="form-label">ФИО</label>
+            <input type="text" id="r-name" class="form-control" placeholder="">
+          </div>
+          <div class="col-12 -review-col">
+            <label for="r-city" class="form-label">Город</label>
+            <select class="form-select" id="r-city">
+              <option value="msk">Москва</option>
+              <option value="bal">Балашиха</option>
+              <option value="pod">Подольск</option>
+              <option value="him">Химки</option>
+              <option value="mtsh">Мытищи</option>
+              <option value="kor">Королёв</option>
+              <option value="lub">Люберцы</option>
+              <option value="krg">Красногорск</option>
+              <option value="els">Электросталь</option>
+              <option value="kol">Коломна</option>
+              <option value="odn">Одинцово</option>
+              <option value="dom">Домодедово</option>
+              <option value="shel">Щёлково</option>
+              <option value="serp">Серпухов</option>
+              <option value="ram">Раменское</option>
+              <option value="orz">Орехово-Зуево</option>
+              <option value="dol">Долгопрудный</option>
+              <option value="push">Пушкино</option>
+              <option value="pet">Реутов</option>
+              <option value="juk">Жуковский</option>
+              <option value="nog">Ногинск</option>
+              <option value="sgp">Сергиев Посад</option>
+              <option value="mso">Московская область</option>
+            </select>
+
+          </div>
+          <div class="col-12 -review-col">
+            <div class="form-label">Ваше фото</div>
+            <div class="file-row">
+              <label for="r-photo" class="form-label file"></label>
+              <span class="filename">Загрузить фото</span>
+            </div>
+            <input type="file" id="r-photo" class="form-control">
+          </div>
+          <div class="col-12 -review-col">
+            <label for="r-text" class="form-label">Ваш отзыв</label>
+            <textarea id="r-text" class="form-control" placeholder=""></textarea>
+          </div>
+        </div>
+        <div class="review__btn -center">
+          <button type="submit" class="btn btn-secondary">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=f4d2a1b8-218d-43d3-9c61-1ea3422e6e7b&lang=ru_RU">
+  </script>
+  <script src="libs/bootstrap/bootstrap.min.js"></script>
+  <script src="libs/swiper/swiper-bundle.min.js"></script>
+  <script src="libs/fancybox/fancybox.umd.js"></script>
+  <script src="libs/scroll/simplebar.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>

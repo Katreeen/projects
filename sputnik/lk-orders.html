@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Мои заказы</title>
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="libs/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="libs/scroll/simplebar.css" />
+  <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body class="b2b">
+  <header class="header header-b2b">
+    <div class="container">
+      <div class="row g-0 -header-row">
+        <div class="col-6 col-sm-4 col-md-3 col-lg-auto -col-logo">
+          <a href="#" class="logotype"><img src="i/logo-b2b.svg" alt=""></a>
+        </div>
+        <div class="col-auto col-sm-12 col-md-9 col-lg-5 -col-hmenu">
+          <nav class="navbar header__navbar">
+            <div class="collapse navbar-collapse show" id="hmenu">
+              <ul class="navbar-nav me-auto hmenu-nav -fs-16">
+                <li class="nav-item">
+                  <a href="#" class="navbar-toggler catalog-link -fs-16" type="button">
+                    <span class="icon-toggle"></span>
+                    Каталог товаров
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Прайс и документы</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Новости</a>
+                </li>
+
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-1 col-sm-2 col-md-4 col-lg-3 -col-search">
+          <div class="search-icon d-lg-none toggle-search"></div>
+          <div class="header__search">
+            <form class="d-flex form-search">
+              <input class="form-control" type="search" placeholder="Поиск" aria-label="Search">
+              <button class="btn btn-search" type="submit"></button>
+            </form>
+          </div>
+        </div>
+        <div class="col-3 col-sm-4 col-md-auto col-lg-auto -col-shop">
+          <div class="header__shop">
+            <a class="favorite-link" href="#">
+              <span class="favorite-amount">3</span>
+            </a>
+            <a class="card-link" href="#">
+              <span class="card-amount">3</span>
+            </a>
+            <div class="header-user">
+              <a href="#" class="b2b-link">
+                <span class="icon-user"></span>
+              </a>
+              <div class="user-drop">
+                <a href="#">Мои данные</a>
+                <a href="#">Мои заказы</a>
+                <a href="#">Поддержка</a>
+                <a href="#" class="logout">Выйти</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-drop -fs-14" id="catalog-menu">
+          <div class="tabs">
+            <div class="nav-box nav flex-column -noto-m">
+              <button class="nav-link active"><span class="icon"><img src="i/icon-cat01.svg" alt=""></span>Кабельная
+                продукция</button>
+              <button class="nav-link"><span class="icon"><img src="i/icon-cat02.svg" alt=""></span> Эфирное
+                оборудование</button>
+              <button class="nav-link"><span class="icon"><img src="i/icon-cat03.svg" alt=""></span> Андроид приставки и
+                асессуары</button>
+              <button class="nav-link"><span class="icon"><img src="i/icon-cat04.svg" alt=""></span> Спутниковое
+                оборудование</button>
+              <button class="nav-link"><span class="icon"><img src="i/icon-cat05.svg" alt=""></span> Кронштейны ТВ,
+                СВЧ</button>
+              <button class="nav-link"><span class="icon"><img src="i/icon-cat06.svg" alt=""></span> Усилители мобильной
+                связи GSMM/3G/4G</button>
+              <button class="nav-link"><span class="icon"><img src="i/icon-cat07.svg" alt=""></span> Мобильные
+                аксессуары</button>
+              <button class="nav-link"><span class="icon"><img src="i/icon-cat08.svg" alt=""></span> Пульты
+                дистанционного управления и аксессуары</button>
+              <button class="nav-link"><span class="icon"><img src="i/icon-cat09.svg" alt=""></span>
+                Инструменты</button>
+              <button class="nav-link"><span class="icon"><img src="i/icon-cat01.svg" alt=""></span> Климатическая
+                техника</button>
+
+              <button class="nav-link"><span class="icon"><img src="i/icon-cat01.svg" alt=""></span> Климатическая
+                техника</button>
+              <button class="nav-link"><span class="icon"><img src="i/icon-cat01.svg" alt=""></span> Климатическая
+                техника</button>
+              <button class="nav-link"><span class="icon"><img src="i/icon-cat01.svg" alt=""></span> Климатическая
+                техника</button>
+            </div>
+            <div class="tab-content">
+              <div class="tab-item fade show active">
+                <ul class="cat-menu">
+                  <li class="nav-item">
+                    <a class="nav-link parent -noto-m" href="#">Кабель акустический</a>
+                    <ul class="sub-menu">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Кабель для видеонаблюдения</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Кабель информационный UTP/FTP</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Кабель магистральный 75 Ом</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Кабель радиочастотный 50 Ом</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Кабель телевизионный 75 Ом</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Кабель телефонный</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Кабель электрический</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link parent -noto-m" href="#">USB флешки и карты памяти</a>
+                    <ul class="sub-menu">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Автомобильные аксессуары</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Зарядные устройство</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Кабель для смартфонов</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Картридеры и USB разветвители</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Моноподы, Селфи-лампы, объективы</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link parent -noto-m" href="#">Онлайн кассы</a>
+                    <ul class="sub-menu">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Весы</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Денежные ящики</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Доп. оборудование</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Кассы</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">ОФД</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Принтеры этикеток</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Сканеры</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Термолента и термоэтикетки</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Фискальные накопители</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link parent -noto-m" href="#">Портативная акустика</a>
+                    <ul class="sub-menu">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Bluetooth колонки</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Колонки для компьютеров</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Радиоприемники</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link parent -noto-m" href="#">Эфирное оборудование</a>
+                    <ul class="sub-menu">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">DVB-T2 приставки для телевизора</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Антенны для цифрового ТВ DVB-T2</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Антенны комнатные всеволновые</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Антенны улич ные всеволновые</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Делители, ответвители, диплексоры</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Мачты, кронштейны</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Пульты для T2 приставок, телевизоров</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Усилители эфирного и кабельного ТВ</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link parent -noto-m">Андроид приставки и асессуары</a>
+                    <ul class="sub-menu">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Air Mouse (аэромыши)</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Smart-TV приставки</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-item fade">222</div>
+              <div class="tab-item fade">333</div>
+              <div class="tab-item fade">444</div>
+              <div class="tab-item fade">...</div>
+              <div class="tab-item fade">...</div>
+              <div class="tab-item fade">...</div>
+              <div class="tab-item fade">...</div>
+              <div class="tab-item fade">...</div>
+              <div class="tab-item fade">...</div>
+            </div>
+          </div>
+        </div>
+        <div class="mobil-drop -fs-14" id="mobil-menu">
+          <div class="mobil-drop-top">
+            <div class="mobil-phone">
+              <a href="tel:79999999999"></a>
+            </div>
+            <div class="mobil-menu-close">
+              <a href="#"></a>
+            </div>
+          </div>
+          <div class="mobil-drop-search">
+            <div class="mobil__search -fs-18">
+              <form class="d-flex form-search">
+                <input class="form-control" type="search" placeholder="Поиск" aria-label="Search">
+                <button class="btn btn-search" type="submit"></button>
+              </form>
+            </div>
+          </div>
+          <div class="mobil-drop-menu">
+            <ul class="navbar-nav me-auto mobil-nav -fs-22">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Каталог товаров</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Стать партнером</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Доставкам</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Оплата</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">О компании</a>
+                <ul class="submenu -fs-16">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Новости</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Статьи</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Реквизиты</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Сервисный центр</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="mobil__user -fs-22">
+            <div class="mobil__login">
+              <span class="icon-user"></span>
+              <a href="#">Личный кабинет</a>
+            </div>
+            <div class="mobil__b2b">
+              <span class="icon-user"></span>
+              <a href="#">Вход B2B</a>
+            </div>
+          </div>
+          <div class="mobil__social social">
+            <a href="#" class="-wa"></a>
+            <a href="#" class="-vb"></a>
+            <a href="#" class="-inst"></a>
+          </div>
+          <div class="mobil__copy -center -fs-14">2022 © Компания «Спутник». Все права защищены</div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <nav aria-label="breadcrumb" class="breadcrumbs -fs-12">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Главная</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Мои заказы</li>
+        </ol>
+      </div>
+    </nav>
+    <div class="section main__title">
+      <div class="container">
+        <h1>Мои заказы</h1>
+      </div>
+    </div>
+    <div class="main__content pt-4">
+      <div class="container">
+        <div class="orders-top">
+          <div class="orders-top-col">
+            <a href="#" class="orders-favorite -fs-14">Избранное</a>
+          </div>
+          <div class="orders-top-col">
+            <select name="" id="" class="orders-sort form-select -fs-14">
+              <option value="">Сортировать</option>
+              <option value="data">По дате</option>
+              <option value="status">По статусу</option>
+            </select>
+          </div>
+        </div>
+        <div class="orders-table-wrap">
+          <table class="orders__table -fs-16">
+            <tbody>
+              <tr class="orders-header">
+                <th class="orders-cell"></th>
+                <th class="orders-cell">№ заказа</th>
+                <th class="orders-cell">Дата</th>
+                <th class="orders-cell">Кол-во</th>
+                <th class="orders-cell">Сумма</th>
+                <th class="orders-cell">Статус оплаты</th>
+                <th class="orders-cell"></th>
+                <th class="orders-cell"></th>
+              </tr>
+              <tr class="orders-item">
+                <td class="orders-cell">
+                  <div class="orders__fav">
+                    <a href="#" class="orders-fav-link -active"></a>
+                  </div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders__num">ПРН00031554</div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders__data">14.02.2020</div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders__quantity">2</div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders-price">988,00 ₽</div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders-status">Не оплачен</div>
+                </td>
+                <td class="orders-cell">
+                  <a href="#" class="orders-download"></a>
+                </td>
+                <td class="orders-cell">
+                  <button class="btn btn-repeat orders-repeat">Повторить</button>
+                </td>
+              </tr>
+              <tr class="orders-item">
+                <td class="orders-cell">
+                  <div class="orders__fav">
+                    <a href="#" class="orders-fav-link"></a>
+                  </div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders__num">ПРН00031554</div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders__data">14.02.2020</div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders__quantity">2</div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders-price">988,00 ₽</div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders-status">Не оплачен</div>
+                </td>
+                <td class="orders-cell">
+                  <a href="#" class="orders-download"></a>
+                </td>
+                <td class="orders-cell">
+                  <button class="btn btn-repeat orders-repeat">Повторить</button>
+                </td>
+              </tr>
+              <tr class="orders-item">
+                <td class="orders-cell">
+                  <div class="orders__fav">
+                    <a href="#" class="orders-fav-link"></a>
+                  </div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders__num">ПРН00031554</div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders__data">14.02.2020</div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders__quantity">2</div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders-price">988,00 ₽</div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders-status">Не оплачен</div>
+                </td>
+                <td class="orders-cell">
+                  <a href="#" class="orders-download"></a>
+                </td>
+                <td class="orders-cell">
+                  <button class="btn btn-repeat orders-repeat">Повторить</button>
+                </td>
+              </tr>
+              <tr class="orders-item">
+                <td class="orders-cell">
+                  <div class="orders__fav">
+                    <a href="#" class="orders-fav-link"></a>
+                  </div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders__num">ПРН00031554</div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders__data">14.02.2020</div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders__quantity">2</div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders-price">988,00 ₽</div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders-status">Не оплачен</div>
+                </td>
+                <td class="orders-cell">
+                  <a href="#" class="orders-download"></a>
+                </td>
+                <td class="orders-cell">
+                  <button class="btn btn-repeat orders-repeat">Повторить</button>
+                </td>
+              </tr>
+              <tr class="orders-item">
+                <td class="orders-cell">
+                  <div class="orders__fav">
+                    <a href="#" class="orders-fav-link"></a>
+                  </div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders__num">ПРН00031554</div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders__data">14.02.2020</div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders__quantity">2</div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders-price">988,00 ₽</div>
+                </td>
+                <td class="orders-cell">
+                  <div class="orders-status">Не оплачен</div>
+                </td>
+                <td class="orders-cell">
+                  <a href="#" class="orders-download"></a>
+                </td>
+                <td class="orders-cell">
+                  <button class="btn btn-repeat orders-repeat">Повторить</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <nav class="page-navigation">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Ближе</a></li>
+            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item"><a class="page-link" href="#">7</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">Дальше</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  </main>
+  <footer class="footer -bg-black align-items-center">
+    <div class="container">
+      <div class="row -footer-row">
+        <div class="col-lg-4 -footer-copy-col">
+          <div class="footer-copy -fs-14">2021 © Компания «Спутник». Все права защищены</div>
+        </div>
+        <div class="col-lg-6">
+          <ul class="nav user-menu">
+            <li class="user-item"><a href="#">Каталог</a></li>
+            <li class="user-item"><a href="#">Мои заказы</a></li>
+            <li class="user-item"><a href="#">Документы</a></li>
+            <li class="user-item"><a href="#">Прайс-лист</a></li>
+            <li class="user-item"><a href="#">Поддержка</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-auto -footer-social">
+          <div class="footer__social fsocial">
+            <a href="#" class="-vk"></a>
+            <a href="#" class="-yt"></a>
+            <a href="#" class="-inst"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <div class="popup popup-review" id="popup-review">
+    <div class="popup__wrap">
+      <div class="popup__title -rub-m -fs-30 -center">Оставить отзыв</div>
+      <form action="" class="review__form">
+        <div class="row -review-row">
+          <div class="col-12 -review-col">
+            <label for="r-name" class="form-label">ФИО</label>
+            <input type="text" id="r-name" class="form-control" placeholder="">
+          </div>
+          <div class="col-12 -review-col">
+            <label for="r-city" class="form-label">Город</label>
+            <select class="form-select" id="r-city">
+              <option value="msk">Москва</option>
+              <option value="bal">Балашиха</option>
+              <option value="pod">Подольск</option>
+              <option value="him">Химки</option>
+              <option value="mtsh">Мытищи</option>
+              <option value="kor">Королёв</option>
+              <option value="lub">Люберцы</option>
+              <option value="krg">Красногорск</option>
+              <option value="els">Электросталь</option>
+              <option value="kol">Коломна</option>
+              <option value="odn">Одинцово</option>
+              <option value="dom">Домодедово</option>
+              <option value="shel">Щёлково</option>
+              <option value="serp">Серпухов</option>
+              <option value="ram">Раменское</option>
+              <option value="orz">Орехово-Зуево</option>
+              <option value="dol">Долгопрудный</option>
+              <option value="push">Пушкино</option>
+              <option value="pet">Реутов</option>
+              <option value="juk">Жуковский</option>
+              <option value="nog">Ногинск</option>
+              <option value="sgp">Сергиев Посад</option>
+              <option value="mso">Московская область</option>
+            </select>
+
+          </div>
+          <div class="col-12 -review-col">
+            <div class="form-label">Ваше фото</div>
+            <div class="file-row">
+              <label for="r-photo" class="form-label file"></label>
+              <span class="filename">Загрузить фото</span>
+            </div>
+            <input type="file" id="r-photo" class="form-control">
+          </div>
+          <div class="col-12 -review-col">
+            <label for="r-text" class="form-label">Ваш отзыв</label>
+            <textarea id="r-text" class="form-control" placeholder=""></textarea>
+          </div>
+        </div>
+        <div class="review__btn -center">
+          <button type="submit" class="btn btn-secondary">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="libs/bootstrap/bootstrap.min.js"></script>
+  <script src="libs/swiper/swiper-bundle.min.js"></script>
+  <script src="libs/fancybox/fancybox.umd.js"></script>
+  <script src="libs/scroll/simplebar.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>

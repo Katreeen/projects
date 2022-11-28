@@ -1,0 +1,125 @@
+body, html {
+  margin: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+.no_scroll{
+  overflow: auto;
+}
+body, .onepage-wrapper, html {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.onepage-wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  padding: 0;
+  -webkit-transform-style: preserve-3d;
+}
+
+.onepage-wrapper .section {
+  width: 100%;
+  height: 100%;
+}
+.disabled-onepage-scroll .onepage-wrapper .section {
+  height: auto;
+}
+.onepage-pagination {
+  position: absolute;
+  right: 96px;
+  top: 50%;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: my-badass-counter;
+}
+.onepage-pagination li {
+  padding: 0;
+  
+}
+.onepage-pagination li:before {
+ 
+}
+.onepage-pagination li a:before{
+   
+  content: counter(my-badass-counter, decimal-leading-zero);
+  counter-increment: my-badass-counter;
+  
+}
+
+.onepage-pagination li a.active:before{
+
+   display: inline-flex;
+    align-items: center;
+
+}
+.onepage-pagination li a{
+  padding: 10px 0;
+  width: 64px;
+  height: 2px; 
+  display: flex;
+  justify-content: last baseline;
+  font-weight: bold;
+  color: #0176AB;
+  font-size: 0;
+  
+}
+.onepage-pagination li a:hover{
+  text-decoration: none;
+}
+.onepage-pagination li a.active{
+    font-size: 18px;
+}
+.onepage-pagination li a:after{
+  content: '';
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  width: 64px;
+  height: 2px;
+  background: #fff;
+  
+}
+
+.onepage-pagination li a.active:after{
+  background: #0176AB;
+  width: 32px;
+  height: 2px;
+}
+
+
+.disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
+  overflow: auto;
+}
+
+.disabled-onepage-scroll .onepage-wrapper .section {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+}
+
+.disabled-onepage-scroll .onepage-wrapper {
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  transform: none !important;
+  -ms-transform: none !important;
+  min-height: 100%;
+}
+
+
+.disabled-onepage-scroll .onepage-pagination {
+  display: none;
+}
+
+body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
+  position: inherit;
+}

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Оформление заказа</title>
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="libs/custom-select/custom-select.css">
+  <link rel="stylesheet" href="css/common.css">
+</head>
+<body class="page">
+  <div class="wrapper">
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row g-0 -header-row">
+          <div class="col-auto">
+            <div class="header__logo">
+              <a href="/" class="logotype"><img src="i/logo.svg" alt=""></a>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="header__right">
+              <div class="row -h-row">
+                <div class="col-auto">
+                  <div class="header__search">
+                    <a href="#" class="search-link"></a>
+                      <form class="form-inline search-form">
+                        <input class="form-control" type="search" placeholder="Поиск..." aria-label="Search">
+                        <button class="btn btn-search" type="submit"></button>
+                        <button class="btn btn-close" type="button"></button>
+                      </form>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="header__basket">
+                    <a href="#" class="basket-link">
+                      <span class="basket-amount">2</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="header__login">
+                    <a href="#" class="user">
+                      <span class="user-icon"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <nav class="header__navbar navbar">
+                    <button class="navbar-toggler btn -open-menu" type="button">
+                      <span class="icon-toggle"></span>
+                    </button>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="drop__menu">
+          <div class="drop__wrap">
+            <div class="drop__top">
+              <div class="drop-top-row row">
+                <div class="col-auto">
+                  <div class="drop__logo">
+                    <a href="/" class="logotype"><img src="i/logo.svg" alt=""></a>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="drop__search">
+                    <a href="#" class="search-link"></a>
+                    <div class="search-wrap">
+                      <form class="form-inline search-form">
+                        <input class="form-control" type="search" placeholder="Поиск..." aria-label="Search">
+                        <button class="btn btn-search" type="submit"></button>
+                      </form>
+                  </div>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="drop__basket">
+                    <a href="#" class="basket-link">
+                      <span class="basket-amount">2</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="drop__login">
+                    <a href="#" class="user">
+                      <span class="user-icon"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <button class="navbar-close btn" type="button">
+                    <span class="icon-close"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <nav class="header__navbar navbar">
+              <ul class="nav-menu -fs-20 -mns-b">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">форма</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">экипировка</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">одежда</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">атрибутика</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">аксессуары</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">доставка и оплата</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">условия возврата</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">документы</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">билеты</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="drop__bottom -mns-m -fs-14">
+              <div class="drop-row">
+                <a href="#" class="social-link -vk"></a>
+                <a href="#" class="social-link -tg"></a>
+                <a href="#" class="drop-logo">ФК Акрон</a>
+              </div>
+              <div class="drop-copy -white">© 2022 Футбольный клуб «Акрон»<br>
+                Все права защищены</div>
+            </div>
+          </div>
+        </div>
+    </header>
+    <main class="main">
+      <div class="section order">
+        <div class="container">
+          <div class="section__title">
+            <h1>Оформление заказа</h1>
+            <div class="row -order-row">
+              <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="order__section -user p-0">
+                  <div class="order__title -fs-20 -mrp-exb">Ваши данные</div>
+                  <div class="order__content">
+                    <div class="row">
+                      <div class="col-sm-6 col-md-12 col-lg-6 user-col">
+                        <label for="user-name" class="ordering-text -fs-12 -mrp-m">Имя</label>
+                        <input type="text" name="user-name" value="" class="form-control" id="user-name">
+                      </div>
+                      <div class="col-sm-6 col-md-12 col-lg-6 user-col">
+                        <label for="user-surname" class="ordering-text -fs-12 -mrp-m">Фамилия</label>
+                        <input type="text" name="user-surname" value="" class="form-control" id="user-surname">
+                      </div>
+                      <div class="col-sm-6 col-md-12 col-lg-6 user-col">
+                        <label for="user-phone" class="ordering-text -fs-12 -mrp-m">Телефон</label>
+                        <input type="text" name="user-phone" value="" class="form-control" id="user-phone">
+                      </div>
+                      <div class="col-sm-6 col-md-12 col-lg-6 user-col">
+                        <label for="user-email" class="ordering-text -fs-12 -mrp-m">E-mail</label>
+                        <input type="text" name="user-email" value="" class="form-control" id="user-email">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="order__section -delivery">
+                  <div class="order__title -fs-20 -mrp-exb">Доставка</div>
+                  <div class="order__content">
+                    <div class="row -order-section-row">
+                      <div class="col-sm-6">
+                        <div class="radio-inline">
+                          <input checked="true" type="radio" name="DELIVERY_TYPE" value="1" class="custom-radio"
+                            id="delivery1">
+                          <label for="delivery1" class="ordering-text -mrp-m">Самовывоз</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="radio-inline">
+                          <input type="radio" name="DELIVERY_TYPE" value="2" class="custom-radio" id="delivery2">
+                          <label for="delivery2" class="ordering-text -mrp-m">Доставка</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="order__content -city">
+                    <label class="ordering-text -fs-12 -mrp-m" for="delivery">Ваш город</label>
+                    <input type="text" autocomplete="off" name="delivery" value="" class="form-control" id="delivery">
+                  </div>
+                </div>
+                <div class="order__section -pay">
+                  <div class="order__title -fs-20 -mrp-exb">Способ оплаты</div>
+                  <div class="order__content">
+                    <div class="radio-inline">
+                      <input checked="true" type="radio" name="PAY_TYPE" value="1" class="custom-radio" id="pay1">
+                      <label for="pay1" class="ordering-text  -mrp-n">Наличный расчет</label>
+                    </div>
+                    <div class="radio-inline">
+                      <input type="radio" name="PAY_TYPE" value="2" class="custom-radio" id="pay2">
+                      <label for="pay2" class="ordering-text  -mrp-n">Оплата банковской картой</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="order__section -btn">
+                  <div class="row-order-btn">
+                      <button class="btn btn-card">ОФОРМИТЬ ЗАКАЗ</button>
+                      <p class="policy -fs-12 -mrp-n">Нажимая кнопку «Оформить заказ» вы даете согласие на обработку персональных данных</p> 
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="col-xl-5 offset-xl-1 col-lg-6 col-md-6">
+                <div class="order__section -result">
+                  <div class="order__title  -fs-20 -mrp-exb">Ваш заказ</div>
+                  <div class="order__product">
+                    <div class="row">
+                      <div class="col-sm-4 col-md-12 col-lg-4">
+                        <div class="order-product-img">
+                          <img src="i/product02.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-sm-8 col-md-12 col-lg-8">
+                        <div class="order-product-info">
+                          <div class="order-product-title -fs-20 -mrp-exb">Комплект шапка и перчатки</div>
+                          <div class="order-product-art -mrp-m">Размер: S, M</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="order__total -mrp-m">
+                    <div class="total-line">
+                      <span class="cart-t">Самовывоз</span>
+                    </div>
+                    <div class="total-line">
+                      <span class="cart-t">Наличный расчет</span>
+                    </div>
+                    <div class="total-line total-result -mrp-exb">
+                      <span class="cart-t">Итого с НДС</span>
+                      <span class="cart-d">7 868,00 ₽</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row -footer-row -mrp-m -fs-14">
+          <div class="col-xl-3 -col-copy">
+            <div class="copy">© 2022 Футбольный клуб «Акрон» <br>Все права защищены</div>
+          </div>
+          <div class="col-xl-6 -col-menu">
+            <ul class="footer__menu">
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+              <li>
+                <a href="#">Доставка и оплата</a>
+              </li>
+              <li>
+                <a href="#">Условия возврата</a>
+              </li>
+              <li>
+                <a href="#">Документы</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-3 -col-dev">
+            <div class="dev">
+              <div class="dev__text">Сделано руками</div>
+              <a href="#" class="dev__logo"><img src="i/dev-logo.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <button class="btn btn-top"></button>
+  <script src="libs/bootstrap/bootstrap.min.js"></script>
+  <script src="libs/swiper/swiper-bundle.min.js"></script>
+  <script src="libs/custom-select/custom-select.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>

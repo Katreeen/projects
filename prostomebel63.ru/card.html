@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Card</title>
+      <meta name="description" content="">
+      <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <!-- style -->
+      <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+      <link rel="stylesheet" href="libs/slick/slick.css"/>
+      <link rel="stylesheet" href="libs/slick/slick-theme.css"/>
+      <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+      <link rel="stylesheet" href="libs/jquery/jquery-ui/jquery-ui.min.css"/>
+      <link rel="stylesheet" href="libs/jquery/jquery-ui/jquery-ui.theme.min.css"/>
+      <link rel="stylesheet" href="css/common.css">
+   </head>
+   <body class="home">
+      <div class="wrapper">
+         <header class="header">
+            <div class="container">
+               <div class="header_top_row row">
+                  <div class="col-6 col-sm-5 col-md-4 col-lg-4 col-header-contacts">
+                     <div class="header_contacts">
+                        <div class="header_contacts_address">
+                           <div class="header_address_item ms-500">ТЦ Мягкофф</div>
+                           <div class="header_address_item ms-500">ТЦ Амбар</div>
+                        </div>
+                        <div class="header_contacts_time -fs-11 ms-500">
+                           ежедневно 10:00 до 19:00
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-lg-4 col-header-logo">
+                     <div class="header_logo">
+                        <a href="/"><img src="i/logos.svg" alt=""></a>
+                     </div>
+                  </div>
+                  <div class="col-6 col-sm-5 col-md-3 col-lg-2 col-header-phone">
+                     <div class="header_phone -fs-16">
+                        <div class="header_phone_item">
+                           <a href="tel:8 800 550 91 71" class="phone_link ms-600">8 800 550 91 71</a>
+                        </div>
+                        <div class="header_phone_item">
+                           <a href="tel:8 800 550 91 71" class="phone_link">(846) 990 17 11</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-2 col-md-1 col-lg-2 col-header-callback">
+                     <div class="header_callback ms-500">
+                        <a href="#" class="header_callback_link modal_link">Заказать звонок</a>
+                        <a href="#" class="header_order_link modal_link">Заказать проект</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <div class="header_nav">
+            <div class="container">
+               <div class="header_nav_row row">
+                  <div class="col-6 col-md-8">
+                     <!-- навигация -->
+                     <nav class="navbar navbar-expand-lg header_menu">
+                        <button class="navbar-toggler collapsed" data-target="#navbarMobil" data-toggle="collapse">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        </button>
+                        <ul class="nav header_menu_nav ms-500">
+                           <li class="nav-item">
+                              <a class="nav-link -burger_icon" href="#">Каталог</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link -action_icon" href="#">Скидки и акции</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">Доставка</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">Оплата</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">Контакты</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">Просто о нас</a>
+                           </li>
+                        </ul>
+                     </nav>
+                     <!-- /навигация -->
+                  </div>
+                  <div class="col-6 col-md-4">
+                     <!-- форма поиска -->
+                     <div class="header_nav_search">
+                        <form class="form-inline form_search">
+                           <input class="form-control" type="search" placeholder="Что ищем?" aria-label="Search">
+                           <button class="btn search_btn" type="submit"></button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mobil_nav_row">
+                  <div class="col-12">
+                     <nav class="navbar navbar-expand-lg header_menu">
+                        <div class="collapse navbar-collapse" id="navbarMobil">
+                           <ul class="nav mobil_menu_nav ms-500">
+                              <li class="nav-item">
+                                 <a class="nav-link -burger_icon" href="#">Каталог</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link -action_icon" href="#">Скидки и акции</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Доставка</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Оплата</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Контакты</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Просто о нас</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <main class="main">
+            <div class="breadcrumbs">
+               <div class="container">
+                  <nav aria-label="breadcrumb">
+                     <ol class="breadcrumb ms-500">
+                        <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                        <li class="breadcrumb-item"><a href="#">Мебель для спальни</a></li>
+                        <li class="breadcrumb-item"><a href="#">Спальни</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Спальня Луна композиция 1</li>
+                     </ol>
+                  </nav>
+               </div>
+            </div>
+            <div class="section section_card">
+               <div class="container">
+                  <div class="row card_row">
+                     <div class="col-lg-7 card_left_photolist_col">
+                        <div class="card_left">
+                           <div class="card_left_photolist">
+                              <div class="slider-card slider-for">
+                                  <div class="slider-for-item">
+                                    <a href="i/img1.jpg" data-fancybox class="fb-link"></a>
+                                    <img src="i/img1.jpg" alt="" class="zoomImg">
+                                  </div>
+                                  <div class="slider-for-item">
+                                    <a href="i/img1.jpg" data-fancybox class="fb-link"></a>
+                                    <img src="i/img2m.jpg" alt="" class="zoomImg">
+                                  </div>
+                                  <div class="slider-for-item">
+                                    <a href="i/img1.jpg" data-fancybox class="fb-link"></a>
+                                    <img src="i/img3m.jpg" alt="" class="zoomImg">
+                                  </div>
+                                  <div class="slider-for-item">
+                                    <a href="i/img1.jpg" data-fancybox class="fb-link"></a>
+                                    <img src="i/img4m.jpg" alt="" class="zoomImg">
+                                  </div>
+                                  <div class="slider-for-item">
+                                    <a href="i/img1.jpg" data-fancybox class="fb-link"></a>
+                                    <img src="i/img1.jpg" alt="" class="zoomImg">
+                                  </div>
+                                  <div class="slider-for-item">
+                                    <a href="i/img1.jpg" data-fancybox class="fb-link"></a>
+                                    <img src="i/img2m.jpg" alt="" class="zoomImg">
+                                  </div>
+                                  <div class="slider-for-item">
+                                    <a href="i/img1.jpg" data-fancybox class="fb-link"></a>
+                                    <img src="i/img3m.jpg" alt="" class="zoomImg">
+                                  </div>
+                                  <div class="slider-for-item">
+                                    <a href="i/img1.jpg" data-fancybox class="fb-link"></a>
+                                    <img src="i/img4m.jpg" alt="" class="zoomImg">
+                                  </div>
+                              </div>
+                              <div class="slider-card slider-nav">
+                                 <div class="slider-nav-item"><img src="i/img1m.jpg" alt=""></div>
+                                 <div class="slider-nav-item"><img src="i/img2m.jpg" alt=""></div>
+                                 <div class="slider-nav-item"><img src="i/img3m.jpg" alt=""></div>
+                                 <div class="slider-nav-item"><img src="i/img4m.jpg" alt=""></div>
+                                 <div class="slider-nav-item"><img src="i/img1m.jpg" alt=""></div>
+                                 <div class="slider-nav-item"><img src="i/img2m.jpg" alt=""></div>
+                                 <div class="slider-nav-item"><img src="i/img3m.jpg" alt=""></div>
+                                 <div class="slider-nav-item"><img src="i/img4m.jpg" alt=""></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-5 card_right_info_col">
+                        <div class="card_right">
+                           <div class="card_right_info">
+                              <div class="section_main_title">
+                                 <h1>Спальня Луна (композиция 1)</h1>
+                              </div>
+                              <div class="card_info_tag -ms-500">
+                                 <span class="info_tag_name">Категории:</span> <a href="#">Кровати</a> <a href="#">Мебель для спальни</a> <a href="#">Спальни</a> <a href="#">Шкафы</a>
+                              </div>
+                              <div class="card_info_option">
+                                 <div class="card_info_option_row">
+                                    <span class="info_option_name">Габариты, мм</span>
+                                    <span class="info_option_val">Ш 2000 x Д 1600 x В 1600</span>
+                                 </div>
+                                 <div class="card_info_option_row">
+                                    <span class="info_option_name">Цвет</span>
+                                    <span class="info_option_val">Дуб белёный</span>
+                                 </div>
+                                 <div class="card_info_option_row">
+                                    <span class="info_option_name">Материал</span>
+                                    <span class="info_option_val">ЛДСП / МДФ / экокожа</span>
+                                 </div>
+                                 <div class="card_info_option_row">
+                                    <span class="info_option_name">Бренд</span>
+                                    <span class="info_option_val">«Сантан»</span>
+                                 </div>
+                                 <div class="card_info_option_row">
+                                    <span class="info_option_name">Cостав</span>
+                                    <span class="info_option_val">Шкаф / тумба / кровать / комод</span>
+                                 </div>
+                              </div>
+                              <div class="card_info_price">
+                                 <div class="card_info_price_row row no-gutters">
+                                    <div class="col-lg-6 col-md-4">
+                                       <div class="card_info_price_val msa-700 -fs-25">65 700 &#8381;</div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-8">
+                                       <div class="card_info_price_credit ms-700">Возможна рассрочка. Условия рассрочки ...</div>
+                                    </div>
+                                 </div>
+                                 <div class="card_info_price_row row no-gutters">
+                                    <div class="col-lg-6 col-md-4 col-sm-6">
+                                       <div class="btn-primary btn card_order">Сделать заказ</div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-8 col-sm-6">
+                                       <div class="btn-third btn card_consult">Консультация</div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row card_row">
+                     <div class="col-lg-7">
+                        <div class="card_left">
+                           <div class="card_description">
+                              <div class="section_title h2">Описание</div>
+                              <div class="card_description_text">
+                                 <p>Луна — современная спальня с выразительным дизайном.
+                                    В данной серии кровать с подъемным механизмом и вместительным бельевым ящиком. Царги и изголовье кроватей выполнены из 32 плиты, кроватный щит выполнен в стиле капитоне — каретная стяжка (ручная работа). Разнообразие шкафов, крышка 32 мм на комодах и тумбах. Направляющие полного выдвижения в тумбах и комодах.
+                                 </p>
+                                 <div class="subtitle h3">Материалы</div>
+                                 <p>Корпус ЛДСП, фасад ЛДСП и МДФ, изголовье кроватей ЭКОКОЖА.</p>
+                                 <div class="subtitle h3">Соств композиции</div>
+                                 <ul class="line ms-500">
+                                    <li>Шкаф (Ш 2000 x Д 1600 x В 1600 мм)</li>
+                                    <li>Прикроватная тумба (Ш 2000 x Д 1600 x В 1600 мм)</li>
+                                    <li>Комод (Ш 2000 x Д 1600 x В 1600 мм)</li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-5">
+                        <div class="card_right">
+                           <div class="card_info_sale">
+                              <div class="card_info_sale_text ms-500">
+                                 <p><b>Дарим скидку 10%</b></p>
+                                 <p>Только по кодовому слову: САЙТ 10.<br>
+                                    Назовите его оператору при подтверждении заказа и получите скидку!
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="card_info_get">
+                              <div class="card_info_delivery card_info_get_row">
+                                 <div class="card_info_get_text">
+                                    <p class="title ms-700">Доставка</p>
+                                    <p>по Самаре — 1 руб.</p>
+                                    <p>В черте города и по обл. — подробности здесь</p>
+                                 </div>
+                              </div>
+                              <div class="card_info_assembly card_info_get_row">
+                                 <div class="card_info_get_text">
+                                    <p class="title ms-700">Сборка</p>
+                                    <p>дополнительная услуга, 10% от стоимости заказа. Подробнее</p>
+                                 </div>
+                              </div>
+                              <div class="card_info_get_pay card_info_get_row">
+                                 <div class="card_info_get_text">
+                                    <p><span class="title ms-700">Оплата</span> Visa / Master Card / Сбербанк</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="section section_credit">
+               <div class="container">
+                  <div class="section_title h2">Рассрочка</div>
+                  <div class="section_credit_wrap ms-500">
+                     <div class="section_credit_row row">
+                        <div class="col-md-4">
+                           <div class="credit_item">
+                              <div class="title ms-600">Без переплат</div>
+                              <p>Наши партнёры — крупные Поволжские фабрики. Никаких переплат за доставку и изготовление вашей мебели.</p>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="credit_item ">
+                              <div class="title ms-600">Ждать не обязательно</div>
+                              <p>Это займёт всего 10 минути вы уже получите свою мебель в ближайшие время: к заселению / отпуску / до начала или к концу  ремонта :)</p>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="credit_item">
+                              <div class="title ms-600">Банки-партнёры</div>
+                              <p>Наш магазин покроет процент в выбранном банке-партнёре. Вы получите мебель в рассрочку и без переплаты (%) за кредит.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="section_credit_row row">
+                        <div class="col-lg-10">
+                           <div class="banks_row">
+                              <div class="bank_item_logo">
+                                 <img src="i/h-bank.svg" alt="">
+                              </div>
+                              <div class="bank_item_logo">
+                                 <img src="i/t-bank.svg" alt="">
+                              </div>
+                              <div class="bank_item_logo">
+                                 <img src="i/a-bank.svg" alt="">
+                              </div>
+                              <div class="bank_item_logo">
+                                 <img src="i/r-bank.svg" alt="">
+                              </div>
+                              <div class="bank_item_logo">
+                                 <img src="i/s-bank.svg" alt="">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="section section_related">
+               <div class="container">
+                  <div class="section_title h2">Похожие товары</div>
+                  <div class="section_subtitle ms-500 -fs-16">Мебель для кухни, обеденная группа</div>
+                  <div class="section_related_wrap">
+                     <div class="related_carousel slides_list">
+                        <div class="related_item">
+                           <a href="#" class="related_item_link">
+                           <img src="i/sale.jpg">
+                           </a>
+                           <span class="related_item_info">
+                           <span class="related_item_name -fs-16 ms-500">Кухня Сандал, МДФ</span>
+                           </span>
+                           <span class="related_item_price">
+                           <span class="related_item_price_val -fs-18 ms-600">56 000 ₽</span>
+                           </span>
+                        </div>
+                        <div class="related_item">
+                           <a href="#" class="related_item_link">
+                           <img src="i/sale.jpg">
+                           </a>
+                           <span class="related_item_info">
+                           <span class="related_item_name -fs-16 ms-500">Кухня Сандал, МДФ</span>
+                           </span>
+                           <span class="related_item_price">
+                           <span class="related_item_price_val -fs-18 ms-600">56 000 ₽</span>
+                           </span>
+                        </div>
+                        <div class="related_item">
+                           <a href="#" class="related_item_link">
+                           <img src="i/sale.jpg">
+                           </a>
+                           <span class="related_item_info">
+                           <span class="related_item_name -fs-16 ms-500">Кухня Сандал, МДФ</span>
+                           </span>
+                           <span class="related_item_price">
+                           <span class="related_item_price_val -fs-18 ms-600">56 000 ₽</span>
+                           </span>
+                        </div>
+                        <div class="related_item">
+                           <a href="#" class="related_item_link">
+                           <img src="i/sale.jpg">
+                           </a>
+                           <span class="related_item_info">
+                           <span class="related_item_name -fs-16 ms-500">Кухня Сандал, МДФ</span>
+                           </span>
+                           <span class="related_item_price">
+                           <span class="related_item_price_val -fs-18 ms-600">56 000 ₽</span>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="section section_sale">
+               <div class="container">
+                  <div class="section_title h2">Сезонная распродажа</div>
+                  <div class="section_subtitle ms-500 -fs-16">Мебель для кухни, обеденная группа</div>
+                  <div class="section_sale_wrap">
+                     <div class="sale_carousel slides_list">
+                        <div class="sale_item">
+                           <a href="#" class="sale_item_link">
+                           <img src="i/sale.jpg">
+                           </a>
+                           <span class="sale_item_info">
+                           <span class="sale_item_name -fs-16 ms-500">Кухня Сандал, МДФ</span>
+                           </span>
+                           <span class="sale_item_price">
+                           <span class="sale_item_new_price -fs-18 ms-600">56 000 ₽</span>
+                           <span class="sale_item_old_price -fs-16 ms-500">51 000 ₽</span>
+                           </span>
+                        </div>
+                        <div class="sale_item">
+                           <a href="#" class="sale_item_link">
+                           <img src="i/sale.jpg">
+                           </a>
+                           <span class="sale_item_info">
+                           <span class="sale_item_name -fs-16 ms-500">Кухня Сандал, МДФ</span>
+                           </span>
+                           <span class="sale_item_price">
+                           <span class="sale_item_new_price -fs-18 ms-600">56 000 ₽</span>
+                           <span class="sale_item_old_price -fs-16 ms-500">51 000 ₽</span>
+                           </span>
+                        </div>
+                        <div class="sale_item">
+                           <a href="#" class="sale_item_link">
+                           <img src="i/sale.jpg">
+                           </a>
+                           <span class="sale_item_info">
+                           <span class="sale_item_name -fs-16 ms-500">Кухня Сандал, МДФ</span>
+                           </span>
+                           <span class="sale_item_price">
+                           <span class="sale_item_new_price -fs-18 ms-600">56 000 ₽</span>
+                           <span class="sale_item_old_price -fs-16 ms-500">51 000 ₽</span>
+                           </span>
+                        </div>
+                        <div class="sale_item">
+                           <a href="#" class="sale_item_link">
+                           <img src="i/sale.jpg">
+                           </a>
+                           <span class="sale_item_info">
+                           <span class="sale_item_name -fs-16 ms-500">Кухня Сандал, МДФ</span>
+                           </span>
+                           <span class="sale_item_price">
+                           <span class="sale_item_new_price -fs-18 ms-600">56 000 ₽</span>
+                           <span class="sale_item_old_price -fs-16 ms-500">51 000 ₽</span>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="section section_contacts">
+               <div class="container">
+                  <div class="section_title h2">Контакты</div>
+               </div>
+               <div class="section_map_wrap">
+                  <div id="map"></div>
+               </div>
+            </div>
+         </main>
+         <footer class="footer">
+            <div class="section_contacts_info">
+               <div class="container">
+                  <div class="section_contacts_info_row row">
+                     <div class="col-lg-4">
+                        <div class="contacts_info_quote">
+                           <div class="quote bs-font -fs-40">Мы очень любим своё дело, в котором уже больше 30 лет</div>
+                           <div class="contacts_info_logo"><img src="i/logos.svg" alt=""></div>
+                        </div>
+                     </div>
+                     <div class="col-lg-2">
+                        <div class="contacts_info_share">
+                           <a href="#" class="vk"><img src="i/footer-vk.svg" alt=""></a>
+                           <a href="#" class="inst"><img src="i/instagram.svg" alt=""></a>
+                        </div>
+                     </div>
+                     <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="contacts_info_item">
+                           <div class="contact_title ms-600 -fs-18">ТЦ Мягкофф</div>
+                           <div class="contact_address ms-500">Самара, ул. Революционная, 70</div>
+                           <div class="contact_phone ms-600 -fs-18">
+                              <a href="tel:+79272601711" class="contact_phone_link">+7 (927) 260-17-11</a>
+                           </div>
+                           <div class="contact_time ms-500">Ежедневно 10:00 до 20:00</div>
+                        </div>
+                     </div>
+                     <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="contacts_info_item">
+                           <div class="contact_title ms-600 -fs-18">ТЦ Амбар</div>
+                           <div class="contact_address ms-500">Самара, Южное шоссе, 5, сек. 2-112</div>
+                           <div class="contact_phone ms-600 -fs-18">
+                              <a href="tel:+79967311711" class="contact_phone_link">+7 (996) 731-17-11</a>
+                           </div>
+                           <div class="contact_time ms-500">Ежедневно 10:00 до 20:00</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="section_footer_nav">
+               <div class="container">
+                  <div class="section_footer_nav_row row">
+                     <div class="col-lg-4">
+                        <div class="footer_nav_callback ms-700 -fs-16">
+                           <a href="#" class="footer_consult_link">Бесплатная консультация</a>
+                           <a href="#" class="footer_callback_link">Заказать звонок</a>
+                        </div>
+                     </div>
+                     <div class="col-lg-8">
+                        <div class="footer_nav_menu">
+                           <nav class="navbar navbar-expand-lg footer_menu">
+                              <button class="navbar-toggler collapsed" data-target="#navbarContent" data-toggle="collapse">
+                              <span class="line"></span>
+                              <span class="line"></span>
+                              <span class="line"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarContent">
+                                 <div class="row footer_menu_row">
+                                    <div class="col-sm-6 col-md-6 col-lg-3">
+                                       <div class="footer_menu_title ms-700"><a class="nav-link" href="#">Каталог мебели</a></div>
+                                       <ul class="nav footer_menu_nav ms-500">
+                                          <li class="nav-item"><a class="nav-link" href="#">Каталог мебели</a></li>
+                                          <li class="nav-item"><a class="nav-link" href="#">Каталог мебели</a></li>
+                                          <li class="nav-item"><a class="nav-link" href="#">Каталог мебели</a></li>
+                                          <li class="nav-item"><a class="nav-link" href="#">Каталог мебели</a></li>
+                                          <li class="nav-item"><a class="nav-link" href="#">Каталог мебели</a></li>
+                                       </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-3">
+                                       <div class="footer_menu_title ms-700"></div>
+                                       <ul class="nav footer_menu_nav ms-500">
+                                          <li class="nav-item"><a class="nav-link" href="#">Каталог мебели</a></li>
+                                          <li class="nav-item"><a class="nav-link" href="#">Каталог мебели</a></li>
+                                          <li class="nav-item"><a class="nav-link" href="#">Каталог мебели</a></li>
+                                          <li class="nav-item"><a class="nav-link" href="#">Каталог мебели</a></li>
+                                          <li class="nav-item"><a class="nav-link" href="#">Каталог мебели</a></li>
+                                       </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-3">
+                                       <div class="footer_menu_title ms-700"></div>
+                                       <ul class="nav footer_menu_nav ms-500">
+                                          <li class="nav-item"><a class="nav-link" href="#">Каталог мебели</a></li>
+                                          <li class="nav-item"><a class="nav-link" href="#">Каталог мебели</a></li>
+                                          <li class="nav-item"><a class="nav-link" href="#">Каталог мебели</a></li>
+                                          <li class="nav-item"><a class="nav-link" href="#">Каталог мебели</a></li>
+                                          <li class="nav-item"><a class="nav-link" href="#">Каталог мебели</a></li>
+                                       </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-3">
+                                       <div class="footer_menu_title ms-700"><a class="nav-link" href="#">Покупателям</a></div>
+                                       <ul class="nav footer_menu_nav ms-500">
+                                          <li class="nav-item"><a class="nav-link" href="#">Скидки и акции</a></li>
+                                          <li class="nav-item"><a class="nav-link" href="#">Доставка и сборка</a></li>
+                                          <li class="nav-item"><a class="nav-link" href="#">Оплата</a></li>
+                                          <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+                                          <li class="nav-item"><a class="nav-link" href="#">Просто о нас</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </nav>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="section_footer_bottom">
+               <div class="container">
+                  <div class="footer_bottom_info -fs-13 ms-500">Важно! Вся информация на сайте носит информационно-справочный характер и не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса Российской Федерации. Технические характеристики товаров, могут быть изменены производителем. Изображения товаров, представленные на сайте, могут отличаться от оригиналов.</div>
+                  <div class="footer_bottom_copyright -fs-13 ms-500">«Просто Мебель 63» © 2016 - 2020 Все права защищены</div>
+               </div>
+            </div>
+         </footer>
+      </div>
+      <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+      <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+      <script src="libs/bootstrap/bootstrap.min.js"></script>
+      <script src="libs/jquery/jquery.maskedinput.min.js"></script>
+      <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+      <script src="libs/slick/slick.min.js"></script>
+      <script src="libs/jquery/jquery-ui/jquery-ui.min.js"></script>
+      <script src="js/common.js"></script>
+   </body>
+</html>

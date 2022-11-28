@@ -1,0 +1,915 @@
+<!doctype html>
+<html lang="ru">
+   <head>
+      <!-- Required meta tags -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="theme-color" content="#df1e42">
+      <meta charset="utf-8">
+      <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+      <!-- Bootstrap CSS -->
+      <!--link rel="stylesheet" href="css/bootstrap.min.css"-->
+      <link rel="stylesheet" href="css/style.css">
+      <title>Карточка товара</title>
+   </head>
+   <body>
+      <div class="wrapper -page">
+      <header class="header">
+         <div class="container">
+            <div class="header_top">
+               <div class="row header_row">
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-4 header_left">
+                     <nav class="navbar header_menu">
+                        <ul class="navbar-nav">
+                           <li class="nav-item">
+                              <a class="nav-link -open_section -menu -btn_bg" href="#catalog">Меню</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link -open_section -cat" href="#catalog">Каталог</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link -open_section" href="#about">Наша работа</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link -link" href="/contacts.html">Контакты</a>
+                           </li>
+                        </ul>
+                     </nav>
+                     <div class="header_search row">
+                        <div class="search_col col-12">
+                           <form class="form-inline">
+                              <button class="btn -btn_bg" type="submit"></button>
+                              <input class="form-control" type="search" placeholder="Введите название товара..." aria-label="Search">
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-sm-4 col-md-12 col-lg-3 header_center">
+                     <a href="/" class="logo"></a>
+                     <span>Ваш производитель хим сырья</span>
+                  </div>
+                  <div class="col-sm-8 col-md-6 col-lg-5 header_right">
+                     <span class="basket_info">В корзине <span>4</span> товара на <span>12 000</span> Р</span>
+                     <!-- <span class="basket_info">Корзина пока пуста.</span> -->
+                     <a href="#" class="basket -btn_bg"></a>
+                     <a href="#authorize" class="user -btn_bg -open_section"></a>
+                     <!-- Всплывающее меню -->
+                     <div class="section section_menu section_menu_item" id="authorize">
+                        <div class="section_menu_box authorize">
+                           <div class="triangle"></div>
+                           <div class="content_center">
+                              <div class="row content_row">
+                                 <div class="col-sm-10 content_item_col">
+                                    <a href="#" class="title_menu">Авторизация</a>
+                                    <div class="authorize_box">
+                                       <div class="row authorize_row">
+                                          <div class="col-md-6 authorize_left">
+                                             <div class="row authorize_head">
+                                                <div class="col-8 col-sm-9 col-md-9 authorize_col">
+                                                   <p>Пожалуйста, авторизуйтесь</p>
+                                                </div>
+                                                <div class="col-4 col-sm-3 col-md-3 authorize_col"><span class="user -btn_bg"></span></div>
+                                             </div>
+                                             <form action="" class="authorize_form">
+                                                <div class="form-group">
+                                                   <label for="InputEmail">Логин</label>
+                                                   <input type="email" class="form-control" id="InputEmail" placeholder="user@mail.ru">
+                                                </div>
+                                                <div class="form-group">
+                                                   <label for="InputPassword">Password</label>
+                                                   <input type="password" class="form-control" id="InputPassword" placeholder="*********">
+                                                </div>
+                                                <div class="form-group checkbox">
+                                                   <input type="checkbox" class="" id="Check">
+                                                   <label class="" for="Check">Запомнить меня на этом компьютере</label>
+                                                </div>
+                                                <button type="submit" class="btn">Войти</button>
+                                             </form>
+                                          </div>
+                                          <div class="col-md-6 authorize_right">
+                                             <div class="authorize_info">
+                                                <p>Если вы впервые на сайте, пожалуйста, заполните форму регистрации.</p>
+                                                <a href="#">Зарегистрироваться</a>
+                                                <a href="#">Забыли пароль?</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12 col-md-2 close_col"><a class="-open_section -close -btn_bg" href="#menu">Меню</a></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- /Всплывающее меню -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="content_wrap -cart">
+         <div class="container">
+            <div class="content -cart product">
+               <div class="content_center row">
+                  <div class="col-lg-12">
+                     <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                           <li class="breadcrumb-item"><a href="#">Каталог</a></li>
+                           <li class="breadcrumb-item"><a href="#">Сырьё для лакокрасочных материалов</a></li>
+                           <li class="breadcrumb-item"><a href="#">Алкидные смолы</a></li>
+                           <li class="breadcrumb-item"><a href="#">Тощие алкиды</a></li>
+                           <li class="breadcrumb-item active" aria-current="page">Lioptal 541</li>
+                        </ol>
+                     </nav>
+                     <div class="page_title -underline_h1">
+                        <h1>Lioptal 541</h1>
+                     </div>
+                  </div>
+                  <div class="col-lg-12">
+                     <div class="row product_info_row">
+                        <div class="col-lg-8 product_info_list">
+                           <div class="product_info">
+                              <div class="title">Общие сведения	</div>
+                              <div class="product_info_left row">
+                                 <div class="product_info_left_col col-md-6">
+                                    <div class="row product_info_item">
+                                       <div class="col-md-4 info_item_title">
+                                          <span>Производитель</span>
+                                       </div>
+                                       <div class="col-md-8 info_item_text">
+                                          <span>Synthopol Chemie, Германия</span>
+                                       </div>
+                                    </div>
+                                    <div class="row product_info_item">
+                                       <div class="col-md-4 info_item_title">
+                                          <span>Характеристика</span>
+                                       </div>
+                                       <div class="col-md-8 info_item_text">
+                                          <span>Тощая алкидная смола (короткий алкид), модифицированная фенольной смолой</span>
+                                       </div>
+                                    </div>
+                                    <div class="row product_info_item">
+                                       <div class="col-md-4 info_item_title">
+                                          <span>Состав</span>
+                                       </div>
+                                       <div class="col-md-8 info_item_text">
+                                          <span>Около 42% фталевого ангидрида<br> Около 38% таллового/древесного масла <br> Около 20% модифицирующей смолы</span>
+                                       </div>
+                                    </div>
+                                    <div class="row product_info_item">
+                                       <div class="col-md-4 info_item_title">
+                                          <span>Форма поставки</span>
+                                       </div>
+                                       <div class="col-md-8 info_item_text">
+                                          <span>60%-й раствор в ксилоле</span>
+                                       </div>
+                                    </div>
+                                    <div class="row product_info_item">
+                                       <div class="col-md-4 info_item_title">
+                                          <span>Фотографии фасовки</span>
+                                       </div>
+                                       <div class="col-md-8 info_item_text">
+                                          <span><a href="" class="photo_link">Фотографии фасовки 1 кг</a></span>
+                                          <span><a href="" class="photo_link">Фотографии фасовки 10 кг</a></span>
+                                          <span><a href="" class="photo_link">Фотографии фасовки 20 кг</a></span>
+                                          <span><a href="" class="photo_link">Фотографии фасовки 220 кг</a></span>
+                                       </div>
+                                    </div>
+                                    <div class="row product_info_item">
+                                       <div class="col-md-4 info_item_title">
+                                          <span><span class="-serv_icon -btn_bg"></span>Применение</span>
+                                       </div>
+                                       <div class="col-md-8 info_item_text">
+                                          <span>Быстровысыхающие грунтовки <br>Антикоррозионные грунтовки <br>Машинные краски</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="product_info_left_col col-md-6">
+                                    <div class="row product_info_item no-gutters">
+                                       <div class="info_item_title">
+                                          <span><span class="-spec_icon -btn_bg"></span>Спецификация / свойства?</span>
+                                       </div>
+                                       <div class="info_item_text -spec">
+                                          <div class="row -spec_row">
+                                             <div class="col-lg-7 -spec_col"><span><b>Время истекания, сек</b> (внутрифирменный метод AV-F-V003)</span></div>
+                                             <div class="col-lg-5 -spec_col"><span>140-190 сек</span></div>
+                                          </div>
+                                          <div class="row -spec_row">
+                                             <div class="col-lg-7 -spec_col"><span><b>Кислотное число</b> (по отношению к твердому веществу) (внутрифирменный метод AV-F-S001)</span></div>
+                                             <div class="col-lg-5 -spec_col"><span> < 25 </span></div>
+                                          </div>
+                                          <div class="row -spec_row">
+                                             <div class="col-lg-7 -spec_col"><span><b>Йодное число</b> (внутрифирменный метод AV-F-F007)</span></div>
+                                             <div class="col-lg-5 -spec_col"><span> < 25 </span></div>
+                                          </div>
+                                          <div class="row -spec_row">
+                                             <div class="col-lg-7 -spec_col"><span><b>Содержание твердых веществ</b> (внутрифирменный метод AV-F-F003)</span></div>
+                                             <div class="col-lg-5 -spec_col"><span> 60±1% </span></div>
+                                          </div>
+                                          <div class="row -spec_row">
+                                             <div class="col-lg-7 -spec_col"><span><b>Температура вспышки, °C</b> (внутрифирменный метод AV-F-F006)</span></div>
+                                             <div class="col-lg-5 -spec_col"><span> ок. 31 </span></div>
+                                          </div>
+                                          <div class="row -spec_row">
+                                             <div class="col-lg-7 -spec_col"><span><b>Плотность, г/мл</b> (внутрифирменный метод AV-F-D001)</span></div>
+                                             <div class="col-lg-5 -spec_col"><span> ок. 1,00 </span></div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           
+                           <div class="product_info_table hide_more">
+                              <nav>
+                                 <div class="nav nav-tabs main-nav-tabs" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active main-tab-item" id="nav-rastvor-tab" data-toggle="tab" href="#nav-rastvor" role="tab" aria-controls="nav-rastvor" aria-selected="true">Растворимость</a>
+                                    <a class="nav-item nav-link main-tab-item" id="nav-sovmest-tab" data-toggle="tab" href="#nav-sovmest" role="tab" aria-controls="nav-sovmest" aria-selected="false">Совместимость</a>
+                                 </div>
+                              </nav>
+                              <div class="tab-content" id="nav-tabContent">
+                                 <div class="tab-pane main-tab-pane fade show active" id="nav-rastvor" role="tabpanel" aria-labelledby="nav-rastvor-tab">
+                                    <table class="tab-content-table">
+                                       <thead>
+                                          <tr>
+                                             <th>Наименование жидкостей</th>
+                                             <th>Реакция</th>
+                                             <th>Условные обозначения</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <td>Уайт-спирит</td>
+                                             <td>0</td>
+                                             <td rowspan="15" class="caption_tab">
+                                                <p>(+) = растворим</p>
+                                                <p>(x) = почти растворим</p>
+                                                <p>(o) = ограниченно растворим
+                                                   или нерастворим
+                                                </p>
+                                                <p>(-) = очень ограниченно растворим или нерастворим</p>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>Этилгликольацетат</td>
+                                             <td>+</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Тоулол</td>
+                                             <td>+</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Бутанол</td>
+                                             <td>+</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Ксилол</td>
+                                             <td>+</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Этанол</td>
+                                             <td>+</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Трихлорэтилен</td>
+                                             <td>+</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Этилацетат</td>
+                                             <td>х</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Бутилацетат</td>
+                                             <td>+</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Метилэтилкетон</td>
+                                             <td>+</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Метилизобутилкетон</td>
+                                             <td>+</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Этилгликоль</td>
+                                             <td>+</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Бутилгликоль</td>
+                                             <td>+</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Метилгликольацетат</td>
+                                             <td>+</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Диацетоновый спирт</td>
+                                             <td>x</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                                 <div class="tab-pane main-tab-pane fade" id="nav-sovmest" role="tabpanel" aria-labelledby="nav-sovmest-tab">...</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-4 product_order">
+                           <div class="row product_order_row">
+                              <div class="col-md-6 col-lg-12 order_box_col">
+                                 <div class="order_box first">
+                                    <div class="up_box">
+                                       <div class="title -underline">Заказ товара</div>
+                                       <span class="option_bottom">
+                                       <span class="option -ok">В наличии</span>
+                                       </span>
+                                       <div class="select_row">
+                                          <div class="fas">
+                                             <div class="order_item_title">Фасовка</div>
+                                             <div class="select-style">
+                                                <!-- <select class="select_fas select" name="select-box" id="selectId"> -->
+                                                <select class="select_fas">
+                                                   <option>1 кг</option>
+                                                   <option>10 кг</option>
+                                                   <option>20 кг</option>
+                                                   <option>220 кг</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="num">
+                                             <div class="order_item_title">Количество</div>
+                                             <div class="num_chek row no-gutters">
+                                                <div class="num_chek_col">
+                                                   <input type="tel" id="number" name="number" value="3 шт"/>
+                                                </div>
+                                                <div class="num_chek_col chek_btn">
+                                                   <a href="" class="down"></a>
+                                                   <a href="" class="up"></a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="down_box">
+                                       <div class="price">
+                                          <div class="price_order_box row">
+                                             <div class="order_item_title col-6 col-sm-6 col-md-3 col-lg-7">Цена</div>
+                                             <div class="price_order col-6 col-sm-6 col-md-9 col-lg-5"><span>2 600 Р</span></div>
+                                          </div>
+                                       </div>
+                                       <div class="order_box_btn">
+                                          <a href="#" class="bascket">Добавить в корзину</a>
+                                          <a href="#questions" class="question -open_section">Задать вопрос</a>
+                                          
+                                       </div>
+                                       <!-- Всплывающее меню -->
+                                       <div class="section section_menu section_menu_item" id="questions">
+                                          <div class="section_menu_box questions">
+                                             <div class="triangle"></div>
+                                             <div class="content_center">
+                                                <div class="row content_row">
+                                                   <div class="col-sm-10 content_item_col">
+                                                      <a href="#" class="title_menu">Задать вопрос</a>
+                                                      <div class="questions_box">
+                                                         <form action="" class="questions_form">
+                                                         <div class="row questions_row">
+                                                            <div class="col-md-7 questions_left">
+                                                               <div class="questions_head">
+                                                                  <p>Мы перезвоним Вам в течении 1 часа и постараемся ответить на все вопросы!</p>
+                                                               </div>
+                                                               
+                                                                  <div class="form-group">
+                                                                     <label for="InputName">Имя</label>
+                                                                     <input type="text" class="form-control" id="InputName" placeholder="Имя...">
+                                                                  </div>
+                                                                  <div class="form-group">
+                                                                     <label for="InputPhone">Телефон</label>
+                                                                     <input type="tel" class="form-control" id="InputPhone" placeholder="+7 (000) 000-00-00">
+                                                                  </div>
+                                                                  
+                                                               
+                                                            </div>
+                                                            <div class="col-md-5 questions_right">
+                                                               <div class="form-group checkbox mailsend_checkbox">
+                                                                     <input type="checkbox" class="" id="Check3">
+                                                                     <label class="" for="Check3">Я даю согласие на обработку моих персональных данных в соотвествии с политикой конфиденциальности.</label>
+                                                                  </div>
+                                                                  <button type="submit" class="btn btn_border">Отправить заявку</button>
+                                                            </div>
+                                                            </form>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-sm-2 close_col"><a class="-open_section -close -btn_bg" href="#menu">Меню</a></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- /Всплывающее меню -->
+                                       <a href="#" class="pasport">Паспорт товара (PDF 2.5 mb)</a>
+                                       <div class="option_bottom btn_box">
+                                          <a href="" class="like"></a>
+                                          <a href="" class="compare"></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="order_box_last col-md-6 col-lg-12">
+                              <div class="col-md-12 col-lg-12 order_box_col">
+                                 <div class="order_box pay">
+                                    <div class="title -underline">Оплата и доставка</div>
+                                    <div class="box_pay_list">
+                                       <p>Доставка по всей Росии</p>
+                                       <p><a href="#">Подробно об условиях</a></p>
+                                       <p>Оплату можно произвести:</p>
+                                       <p>Master Card  /  Visa  /  МИР  /  Yandex.Money</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-md-12 col-lg-12 order_box_col">
+                                 <div class="order_box delivery">
+                                    <div class="title -underline">Пункты выдачи</div>
+                                    <div class="sity">
+                                       <select name="sity">
+                                          <option>Выберите город</option>
+                                          <option>Москва</option>
+                                          <option>Самара</option>
+                                          <option>Санкт-Петербург</option>
+                                          <option>Архангельск</option>
+                                          <option>Другое</option>
+                                       </select>
+                                    </div>
+                                    <div class="point_list">
+                                       <div class="point_inner">
+                                          <a href="#">Пункт самовывоза в Москве</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="product_info_bottom_section hide_more">
+                        <div class="row product_info_bottom_row">
+                           <div class="product_info_bottom_col col-lg-9">
+                              <div class="product_info_bottom_box">
+                                 <div class="title">Рекомендации по составлению рецептур, хранению, транспортировке товара</div>
+                                 <div class="product_info_bottom row">
+                                    <div class="info_bottom_title col-md-5">
+                                       <div class="info_bottom_title_row">
+                                          <span class="-recomend_icon1 -btn_bg"></span>
+                                          <span>Рекомендации по составлению и использованию рецептур</span>
+                                       </div>
+                                    </div>
+                                    <div class="info_bottom_text col-md-7">
+                                       <p>LIOPTAL 541 — тощая алкидная смола, модифицированная фенольной смолой, используется в первую очередь для быстровысыхающих грунтовок, хромовокислых цинковых грунтовок, антикоррозионных грунтовок в качестве связующего.</p>
+                                       <p>В комбинации с тощими и средними высыхающими алкидными сомлами и эпоксиэфирами можно получить широкий ассортимент специальных грунтовок и быстровысыхающих промышленных покрытий.</p>
+                                    </div>
+                                 </div>
+                                 <div class="product_info_bottom row">
+                                    <div class="info_bottom_title col-md-5">
+                                       <div class="info_bottom_title_row">
+                                          <span class="-recomend_icon2 -btn_bg"></span>
+                                          <span>Условия хранения</span>
+                                       </div>
+                                    </div>
+                                    <div class="info_bottom_text col-md-7">
+                                       <p class="red">Информация об упаковке и маркеровке!!!</p>
+                                       <p>LIOPTAL 541 — тощая алкидная смола, модифицированная фенольной смолой, используется в первую очередь для.</p>
+                                    </div>
+                                 </div>
+                                 <div class="product_info_bottom row">
+                                    <div class="info_bottom_title col-md-5">
+                                       <div class="info_bottom_title_row">
+                                          <span class="-recomend_icon3 -btn_bg"></span><span>Условия транспортировки</span>
+                                       </div>
+                                    </div>
+                                    <div class="info_bottom_text col-md-7">
+                                       <p>LIOPTAL 541 — тощая алкидная смола, модифицированная фенольной смолой, используется в первую очередь для быстровысыхающих грунтовок, хромовокислых цинковых грунтовок, антикоррозионных грунтовок в качестве связующего</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- /container -->
+         <div class="bottom_infobox">
+            <div class="container">
+               <div class="dotted"></div>
+               <div class="row">
+                  <div class="similar_products bottom_infobox_product col-md-9">
+                     <div class="title_tt">Похожие товары</div>
+                     <div class="products_table">
+                        <div class="row no-gutters products_table_row products_table_header">
+                           <div class="products_table_col">
+                              <span>Наименование</span>
+                           </div>
+                           <div class="products_table_col">
+                              <span>Форма поставки</span>
+                           </div>
+                           <div class="products_table_col">
+                              <span>Кислотное число</span>
+                           </div>
+                           <div class="products_table_col">
+                              <span>Вязкость <span>/ МПАС*; С **</span></span>	
+                           </div>
+                           <div class="products_table_col">
+                              <span>Масло</span>
+                           </div>
+                           <div class="products_table_col ">
+                              <span>Применение</span>
+                           </div>
+                           <div class="products_table_col price_col">
+                              <span>Цена</span>
+                           </div>
+                        </div>
+                        <div class="row no-gutters products_table_row products_table_body">
+                           <div class="products_table_col">
+                              <span class="mobil_name">Наименование</span>
+                              <a href="/product.html" class="product_name">Lioptal 541</a>
+                              <span class="option_bottom">
+                              <span class="option -ok">В наличии</span>
+                              </span>
+                           </div>
+                           <div class="products_table_col">
+                              <span class="mobil_name">Форма поставки</span>
+                              <span class="option_top">60% в ксилоле</span>
+                           </div>
+                           <div class="products_table_col">
+                              <span class="mobil_name">Кислотное число</span>
+                              <span class="option_top">< 25</span>
+                           </div>
+                           <div class="products_table_col">
+                              <span class="mobil_name">Вязкость</span>
+                              <span class="option_top">140−200c</span>
+                           </div>
+                           <div class="products_table_col">
+                              <span class="mobil_name">Масло</span>
+                              <span class="option_top">38% талловое/тунговое масло</span>
+                              <span class="option_bottom">
+                              <span class="option"><a href="#">Заказать образец</a></span>
+                              </span>
+                           </div>
+                           <div class="products_table_col">
+                              <span class="mobil_name">Применение</span>
+                              <span class="option_top -light">38% талловое/тунговое масло</span>
+                              <span class="option_bottom btn_box">
+                              <a href="" class="like"></a>
+                              <a href="" class="compare"></a>
+                              </span>
+                           </div>
+                           <div class="products_table_col price_col">
+                              <span class="option_top -price">2 600 Р</span>
+                              <span class="option_bottom">
+                              <button class="btn_price basket -btn_bg"></button>
+                              </span>
+                           </div>
+                        </div>
+                        <div class="row no-gutters products_table_row products_table_body">
+                           <div class="products_table_col">
+                              <span class="mobil_name">Наименование</span>
+                              <a href="/product.html" class="product_name">Lioptal 541</a>
+                              <span class="option_bottom">
+                              <span class="option -ok">В наличии</span>
+                              </span>
+                           </div>
+                           <div class="products_table_col">
+                              <span class="mobil_name">Форма поставки</span>
+                              <span class="option_top">60% в ксилоле</span>
+                           </div>
+                           <div class="products_table_col">
+                              <span class="mobil_name">Кислотное число</span>
+                              <span class="option_top">< 25</span>
+                           </div>
+                           <div class="products_table_col">
+                              <span class="mobil_name">Вязкость</span>
+                              <span class="option_top">140−200c</span>
+                           </div>
+                           <div class="products_table_col">
+                              <span class="mobil_name">Масло</span>
+                              <span class="option_top">38% талловое/тунговое масло</span>
+                              <span class="option_bottom">
+                              <span class="option"><a href="#">Заказать образец</a></span>
+                              </span>
+                           </div>
+                           <div class="products_table_col">
+                              <span class="mobil_name">Применение</span>
+                              <span class="option_top -light">38% талловое/тунговое масло</span>
+                              <span class="option_bottom btn_box">
+                              <a href="" class="like"></a>
+                              <a href="" class="compare"></a>
+                              </span>
+                           </div>
+                           <div class="products_table_col price_col">
+                              <span class="option_top -price">2 600 Р</span>
+                              <span class="option_bottom">
+                              <button class="btn_price basket -btn_bg"></button>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <footer class="footer">
+            <div class="container">
+               <div class="copy">
+                  2019 © Авторские права — ГК «Аттика»
+               </div>
+            </div>
+            <div id="toTop" class="-btn_bg"><img src="/images/toTop.svg" alt="" /></div>
+         </footer>
+         <div class="section_menu">
+            <div class="section_menu_box">
+               <div class="section_menu_header row no-gutters">
+                  <div class="col-md-7 col-lg-6 section_menu_navbar">
+                     <a class="-open_section -close -btn_bg" href="#menu">Меню</a>
+                     <ul class="nav navbar tabs__caption">
+                        <li class="nav-item">
+                           <a class="nav-link active" href="#catalog">Каталог</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#about">Наша работа</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link -link" href="/contacts.html">Контакты</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-6 section_menu_contacts">
+                     <div class="section_top_contacts">
+                        <div class="phone"><a href="tel:78124412180">+7 (812) 441-21-80</a></div>
+                        <div class="work_time">пн-пт с 9:00 до 20:00</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="tabs">
+                  <div class="content_center tabs__content active" id="catalog">
+                     <div class="content_center_menu">
+                        <div class="row content_center_menu_row">
+                           <div class="col-md-6 content_menu_left">
+                              <div class="row menu_item_row">
+                                 <div class="col-sm-2 menu_item_col">
+                                    <span class="chap">01</span>
+                                 </div>
+                                 <div class="col-sm-10 menu_item_col">
+                                    <a href="#" class="title_menu">Для лакокрасочных материалов</a>
+                                    <ul class="nav flex-column  -first_m">
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Алкидные смолы</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Акриловые смолы</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Активные разбавители</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Амино-Смолы</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Дисперсии</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Ненасыщенные полиэфирные смолы</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Отвердители эпоксидных систем</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Полиэфирные смолы насыщенные</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Полиизоционаты</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Системы для Can- и Coil-coatings</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Сиккативы и катализаторы</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">УФ-отверждаемые смолы</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Функциональные добавки</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Хлорированные смолы</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Эпоксидные смолы</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="row menu_item_row">
+                                 <div class="col-sm-2 menu_item_col">
+                                    <span class="chap">03</span>
+                                 </div>
+                                 <div class="col-sm-10 menu_item_col">
+                                    <a href="#" class="title_menu">Для строительных материалов</a>
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Акриловые смолы</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Активные разбавители эпоксидных систем</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Готовые компаунды</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Защита Бетона</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Отвердители для эпоксидов</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Полиолы</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Полиизоционаты</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Полиэфирные смолы насыщенные</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Хлорированные смолы</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Эпоксидные смолы</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6 content_menu_right">
+                              <div class="row menu_item_row">
+                                 <div class="col-sm-2 menu_item_col">
+                                    <span class="chap">02</span>
+                                 </div>
+                                 <div class="col-sm-10 menu_item_col">
+                                    <a href="#" class="title_menu">Для композитных материалов</a>
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Активные разбавители</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Армирующие материал</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Гелькоуты и Топкоуты</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Инструменты</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Ненасыщенные полиэфирные смолы</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Отвердители для эпоксидных смол</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Ускорители и катализаторы</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Эпоксидные смолы</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="row menu_item_row">
+                                 <div class="col-sm-2 menu_item_col">
+                                    <span class="chap">04</span>
+                                 </div>
+                                 <div class="col-sm-10 menu_item_col">
+                                    <a href="#" class="title_menu">Растворители</a>
+                                    <ul class="nav flex-column">
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Акриловые смолы</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Активные разбавители эпоксидных систем</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Готовые компаунды</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Защита Бетона</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Отвердители для эпоксидов</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Полиолы</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Полиизоционаты</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Полиэфирные смолы насыщенные</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Хлорированные смолы</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" href="#">Эпоксидные смолы</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <a href="#" class="btn_pdf">Скачать Прайс-Лист (PDF)</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="content_center tabs__content" id="about">
+                     <div class="content_center_menu">
+                        <div class="row content_center_menu_row">
+                           <div class="col-md-7 news">
+                              <div class="row menu_item_row">
+                                 <div class="col-sm-2 menu_item_col">
+                                    <span class="chap">01</span>
+                                 </div>
+                                 <div class="col-sm-10 menu_item_col">
+                                    <a href="#" class="title_menu">Новости</a>
+                                    <div class="news_item_box">
+                                       <a href="#" class="news_item">
+                                          <span class="triangle"></span>
+                                          <img src="images/item-3.png" alt="">   
+                                          <span class="news_item_title"><span class="-lite">#17</span> «Attlamine 33»</span>
+                                          <span class="news_item_anons">Мы провели тестирование «Attlamine 33» специально для Вас</span>
+                                          <span class="news_item_data">22 апреля 2019</span>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row menu_item_row">
+                                 <div class="col-sm-2 menu_item_col">
+                                    <span class="chap">02</span>
+                                 </div>
+                                 <div class="col-sm-10 menu_item_col">
+                                    <a href="#" class="title_menu">Статьи</a>
+                                    <a href="#" class="news_item">
+                                       <span class="triangle"></span>
+                                       <img src="images/item-3.png" alt="">   
+                                       <span class="news_item_title"><span class="-lite">#24</span> «Synthalat A 077»</span>
+                                       <span class="news_item_anons">Защита от коррозии качественными лакокрасочными материалами на основе акриловой смолы «Synthalat A 077»</span>
+                                       <span class="news_item_data">Юлия Галкина / 22 апреля 2019</span>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-5 link_list">
+                              <div class="row menu_item_row">
+                                 <div class="col-sm-2 menu_item_col">
+                                    <span class="chap">03</span>
+                                 </div>
+                                 <div class="col-sm-10 menu_item_col">
+                                    <a href="#" class="title_menu">Видео</a>
+                                 </div>
+                              </div>
+                              <div class="row menu_item_row">
+                                 <div class="col-sm-2 menu_item_col">
+                                    <span class="chap">04</span>
+                                 </div>
+                                 <div class="col-sm-10 menu_item_col">
+                                    <a href="#" class="title_menu">Сертификаты</a>
+                                 </div>
+                              </div>
+                              <div class="row menu_item_row">
+                                 <div class="col-sm-2 menu_item_col">
+                                    <span class="chap">05</span>
+                                 </div>
+                                 <div class="col-sm-10 menu_item_col">
+                                    <a href="#" class="title_menu">Доставка / Оплата</a>
+                                 </div>
+                              </div>
+                              <div class="row menu_item_row">
+                                 <div class="col-sm-2 menu_item_col">
+                                    <span class="chap">06</span>
+                                 </div>
+                                 <div class="col-sm-10 menu_item_col">
+                                    <a href="#" class="title_menu">Об «Авогадро»</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="js/jquery-3.4.0.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.nicescroll.min.js"></script>
+      <script src="owlcarousel/owl.carousel.min.js"></script>
+      <script src="js/common.js"></script>
+   </body>
+   </html>
