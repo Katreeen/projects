@@ -1,1 +1,0 @@
-<a href="mailto:ceo@aez.com.tr">ceo@aez.com.tr</a>
