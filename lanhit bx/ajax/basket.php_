@@ -1,0 +1,123 @@
+<?php
+require $_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/include/prolog_before.php';
+?>
+<pre><?print_r($_POST);?></pre>
+<?
+      
+// Ответ всегда возвращаем в JSON
+header("Content-type: application/json; charset=utf-8");
+
+// класс для возврата результата JSON
+class JSONResults {
+  public $status = 0;
+  public $msg = "Ошибка при подключении модулей";
+}
+// Список статусов: 0 - ошибка на стороне сервера; 1 - товар добавлен в корзину; -1 - не удалось добавить товар в корзину; 2 - количество товара обновлено; -1 - не удалось обновить количество товара; 3 - товар удалён из корзины; -3 - не удалось удалить товар из корзины
+      
+// Создаём экземпляр объекта
+$JSONResults = new JSONResults;
+      
+if (CModule::IncludeModule("sale") && CModule::IncludeModule("catalog")) {
+      
+  function productAddToBasket($PRODUCT_ID=0,$QUANTITY=0) {
+    return Add2BasketByProductID($PRODUCT_ID,$QUANTITY,array());
+  }
+      
+  function productDeleteFromBasket($PRODUCT_ID=0) {
+  //// Выполняем запрос в корзину узнаём есть ли у неё элемент с Ид_товара
+    $a = CSaleBasket::GetList(// Выполняем запрос в корзину узнаём есть ли у неё элемент с Ид_товара
+      $arOrder = array(),
+      $arFilter = array("PRODUCT_ID"=>$PRODUCT_ID),
+      $arGroupBy = false,
+      $arNavStartParams = false,
+      $arSelectFields = array()
+    );
+    if (count($a->arResult)) {// Если есть получаем Ид этого элемента в корзине(может не совпадать с Ид товара)
+      $idProductInBasket = $a->arResult[0]["ID"];
+      $arFields_new = array("QUANTITY"=>0);
+      return CSaleBasket::Update($idProductInBasket, $arFields_new);
+    }
+    return false;
+  }
+      
+  function productUpdateInBasket($prodId=0,$QUANTITY=0) {
+    if ($prodId == 0) {return false;}
+      $basket = \Bitrix\Sale\Basket::loadItemsForFUser(\Bitrix\Sale\Fuser::getId(CSaleBasket::GetBasketUserID()), \Bitrix\Main\Context::getCurrent()->getSite());
+      $basket->refresh();
+
+      $dbRes = \Bitrix\Sale\Basket::getList(array(
+        "select"=>["PRODUCT_ID","NAME","QUANTITY","ID"],
+        "filter"=>array(
+        "=FUSER_ID"=>\Bitrix\Sale\Fuser::getId(),
+        "=ORDER_ID" => null,
+        "=LID"=>\Bitrix\Main\Context::getCurrent()->getSite(),
+        "=CAN_BUY"=>"Y",
+        "=PRODUCT_ID"=>$prodId
+      )
+    ));
+
+    $itemId = false;
+
+    while ($item = $dbRes->fetch()) {
+      if (isset($item["ID"]) and $item["ID"] and isset($item["PRODUCT_ID"]) and ($item["PRODUCT_ID"] == $prodId)) {
+        $itemId = $item["ID"];
+      }
+    }
+
+    if ($itemId) {
+      $itemProd = $basket->getItemById($itemId);
+      if ($QUANTITY==0) {
+        $itemProd->delete();
+      } else {
+        $itemProd->setField("QUANTITY",$QUANTITY);
+      }
+      $basket->save();
+      $basket->refresh();
+      return true;
+   }
+  return false;
+}
+      
+  $action = "";
+  if (isset($_REQUEST["action"]) and (($_REQUEST["action"] == "add") or ($_REQUEST["action"] == "delete") or ($_REQUEST["action"] == "update"))) {
+    $action = $_REQUEST["action"];
+  }
+      
+  $id = 0;
+  if (isset($_REQUEST["id"]) and ($_REQUEST["id"] != "")) {
+    $id = $_REQUEST["id"];
+  }
+      
+  $QUANTITY = 0;
+  if (isset($_REQUEST["count"]) and ($_REQUEST["count"] != "")) {
+    $QUANTITY = $_REQUEST["count"];
+  }
+  if ($action == "add") {
+    if (productAddToBasket($id,$QUANTITY)) {
+      $JSONResults->status = 1;
+      $JSONResults->msg = "Товар добавлен в корзину";
+    } else {
+      $JSONResults->status = -1;
+      $JSONResults->msg = "Не удалось добавить товар в корзину";
+    }
+  } elseif ($action == "update") {
+    if (productUpdateInBasket($id,$QUANTITY)) {
+      $JSONResults->status = 2;
+      $JSONResults->msg = "Количество товара в корзине обновлено";
+    } else {
+      $JSONResults->status = -2;
+      $JSONResults->msg = "Не удалось обновить количество товара в корзине";
+    } 
+  } elseif ($action == "delete") {
+    if (productDeleteFromBasket($id)) {
+      $JSONResults->status = 3;
+      $JSONResults->msg = "Товар удалён из корзины";
+    } else {
+      $JSONResults->status = -3;
+      $JSONResults->msg = "Не удалось удалить товар из корзины";
+    } 
+  }
+}
+      
+echo json_encode($JSONResults);
+?>
