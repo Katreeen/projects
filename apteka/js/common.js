@@ -352,6 +352,10 @@ console.log(document.documentElement.clientWidth);
 		}
 	}
 
+		document.querySelector('.open-app__close').addEventListener('touchend', (e) => {
+			e.preventDefault();
+			document.querySelector('.open-app').classList.remove('open');
+		})
 
 });
 
